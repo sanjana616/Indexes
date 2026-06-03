@@ -7,7 +7,9 @@ from datetime import datetime
 import pytz
 import yfinance as yf
 import pandas as pd
-import pandas_ta as ta
+from ta.momentum import RSIIndicator
+from ta.trend import EMAIndicator, MACD
+from ta.volume import VolumeWeightedAveragePrice
 
 
 # ----------------------------
@@ -112,32 +114,43 @@ def insert_data(table_name, df):
 # INDICATORS
 # ----------------------------
 def compute_indicators(df, is_index=False):
-    """Calculate RSI, EMA20, MACD, VWAP and add as columns to df."""
     try:
-        df.ta.rsi(length=14, append=True)
-        df.ta.ema(length=20, append=True)
-        df.ta.macd(fast=12, slow=26, signal=9, append=True)
 
-        # VWAP is meaningless for indexes (volume=0), skip it
+        df["rsi_14"] = RSIIndicator(
+            close=df["close"],
+            window=14
+        ).rsi()
+
+        df["ema_20"] = EMAIndicator(
+            close=df["close"],
+            window=20
+        ).ema_indicator()
+
+        macd = MACD(df["close"])
+
+        df["macd"] = macd.macd()
+        df["macd_signal"] = macd.macd_signal()
+
         if not is_index:
-            df.ta.vwap(append=True)
-        else:
-            df["VWAP_D"] = None
+            vwap = VolumeWeightedAveragePrice(
+                high=df["high"],
+                low=df["low"],
+                close=df["close"],
+                volume=df["volume"]
+            )
 
-        # Normalize column names
-        df.rename(columns={
-            "RSI_14": "rsi_14",
-            "EMA_20": "ema_20",
-            "MACD_12_26_9": "macd",
-            "MACDs_12_26_9": "macd_signal",
-            "VWAP_D": "vwap"
-        }, inplace=True)
+            df["vwap"] = vwap.volume_weighted_average_price()
+        else:
+            df["vwap"] = None
 
     except Exception as e:
-        logger.error(f"Error computing indicators: {e}")
-        for col in ["rsi_14", "ema_20", "macd", "macd_signal", "vwap"]:
-            if col not in df.columns:
-                df[col] = None
+        logger.error(f"Indicator error: {e}")
+
+        df["rsi_14"] = None
+        df["ema_20"] = None
+        df["macd"] = None
+        df["macd_signal"] = None
+        df["vwap"] = None
 
     return df
 
@@ -176,6 +189,7 @@ def fetch_stock_data(symbol, is_index=False):
             tickers=symbol,
             interval="1m",
             period="1d",
+            auto_adjust=True,
             progress=False
         )
 
@@ -186,6 +200,8 @@ def fetch_stock_data(symbol, is_index=False):
         df = df.droplevel("Ticker", axis=1)
         df.reset_index(inplace=True)
 
+        df = df.iloc[:-1]
+        
         df["Datetime"] = df["Datetime"].dt.tz_convert(IST)
         df["Volume"] = pd.to_numeric(df["Volume"], errors="coerce").fillna(0).astype(int)
 
