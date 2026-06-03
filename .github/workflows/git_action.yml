@@ -3,6 +3,13 @@ name: Run Stock Price Management Script
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "*/5 * * * *"
+
+concurrency:
+  group: stock-data-update
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -37,8 +44,11 @@ jobs:
 
           if ! git diff --cached --quiet; then
             git commit -m "Auto update $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-            git pull --rebase origin main
-            git push
+
+            git fetch origin main
+            git pull origin main --strategy-option ours
+
+            git push origin main
           else
             echo "No changes to commit"
           fi
