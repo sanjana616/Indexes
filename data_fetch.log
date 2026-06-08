@@ -51656,3 +51656,30 @@
 2026-06-08 03:31:03,675 - INFO - [ICICIBANK_NS] Inserted 374 rows (duplicates ignored)
 2026-06-08 03:31:03,675 - INFO - Inserted 374 rows for ICICIBANK.NS
 2026-06-08 03:31:03,691 - INFO - Cycle complete. README updated.
+2026-06-08 03:45:36,999 - INFO - Starting data fetch cycle...
+2026-06-08 03:45:37,583 - WARNING - No data to insert for ^NSEI
+2026-06-08 03:45:37,826 - WARNING - No data to insert for ^NSEBANK
+2026-06-08 03:45:37,940 - WARNING - No data returned for ^BSESN
+2026-06-08 03:45:37,941 - WARNING - No data to insert for ^BSESN
+2026-06-08 03:45:38,201 - WARNING - No data to insert for ^NSEMDCP50
+2026-06-08 03:45:38,426 - WARNING - No data to insert for ALKEM.NS
+2026-06-08 03:45:38,661 - WARNING - No data to insert for APLAPOLLO.NS
+2026-06-08 03:45:38,954 - WARNING - No data to insert for ASHOKLEY.NS
+2026-06-08 03:45:39,184 - WARNING - No data to insert for AUBANK.NS
+2026-06-08 03:45:39,548 - WARNING - No data to insert for AUROPHARMA.NS
+2026-06-08 03:45:39,818 - WARNING - No data to insert for BHARATFORG.NS
+2026-06-08 03:45:40,025 - WARNING - No data to insert for BHEL.NS
+2026-06-08 03:45:40,245 - WARNING - No data to insert for BSE.NS
+2026-06-08 03:45:40,529 - WARNING - No data to insert for COFORGE.NS
+2026-06-08 03:45:40,769 - WARNING - No data to insert for COLPAL.NS
+2026-06-08 03:45:40,940 - WARNING - No data to insert for DABUR.NS
+2026-06-08 03:45:41,126 - WARNING - No data to insert for DIXON.NS
+2026-06-08 03:45:41,455 - WARNING - No data to insert for FEDERALBNK.NS
+2026-06-08 03:45:41,632 - WARNING - No data to insert for FORTIS.NS
+2026-06-08 03:45:41,853 - WARNING - No data to insert for GMRAIRPORT.NS
+2026-06-08 03:45:42,062 - WARNING - No data to insert for GODREJPROP.NS
+2026-06-08 03:45:42,231 - WARNING - No data to insert for HAVELLS.NS
+2026-06-08 03:45:42,495 - WARNING - No data to insert for HEROMOTOCO.NS
+2026-06-08 03:45:42,778 - WARNING - No data to insert for HINDPETRO.NS
+2026-06-08 03:45:43,002 - WARNING - No data to insert for ICICIBANK.NS
+2026-06-08 03:45:43,020 - INFO - Cycle complete. README updated.
