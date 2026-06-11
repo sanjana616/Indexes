@@ -1,6 +1,6 @@
 # Stock-Price-Management-Mid-Cap
 
-Last updated: 2026-06-11 15:50:46 IST
+Last updated: 2026-06-11 15:55:35 IST
 
 ## 📊 MARKET INDEXES
 
@@ -23,8 +23,8 @@ Last updated: 2026-06-11 15:50:46 IST
   <tr><td>AUROPHARMA_NS</td><td>2026-06-11 15:27:00</td><td>1465.20</td><td>6510</td><td>54.95</td><td>1464.32</td><td>0.08</td><td>1464.32</td><td>BUY</td></tr>
   <tr><td>BHARATFORG_NS</td><td>2026-06-11 15:28:00</td><td>1949.00</td><td>3006</td><td>64.58</td><td>1945.00</td><td>0.97</td><td>1944.87</td><td>BUY</td></tr>
   <tr><td>BHEL_NS</td><td>2026-06-11 15:28:00</td><td>370.95</td><td>33539</td><td>54.48</td><td>370.71</td><td>-0.02</td><td>370.76</td><td>BUY</td></tr>
-  <tr><td>BSE_NS</td><td>2026-06-11 15:27:00</td><td>3894.30</td><td>7032</td><td>57.53</td><td>3888.38</td><td>-0.34</td><td>3887.83</td><td>BUY</td></tr>
-  <tr><td>COFORGE_NS</td><td>2026-06-11 15:27:00</td><td>1396.90</td><td>7217</td><td>68.06</td><td>1394.78</td><td>1.70</td><td>1396.15</td><td>HOLD</td></tr>
+  <tr><td>BSE_NS</td><td>2026-06-11 15:28:00</td><td>3895.00</td><td>10613</td><td>58.34</td><td>3889.01</td><td>0.21</td><td>3888.72</td><td>BUY</td></tr>
+  <tr><td>COFORGE_NS</td><td>2026-06-11 15:28:00</td><td>1395.70</td><td>7757</td><td>59.15</td><td>1394.86</td><td>1.56</td><td>1396.27</td><td>HOLD</td></tr>
   <tr><td>COLPAL_NS</td><td>2026-06-11 15:28:00</td><td>2033.60</td><td>1690</td><td>66.08</td><td>2030.35</td><td>1.54</td><td>2031.43</td><td>BUY</td></tr>
   <tr><td>DABUR_NS</td><td>2026-06-11 15:28:00</td><td>422.70</td><td>11197</td><td>58.63</td><td>422.18</td><td>0.29</td><td>422.51</td><td>BUY</td></tr>
   <tr><td>DIXON_NS</td><td>2026-06-11 15:28:00</td><td>11405.00</td><td>1174</td><td>61.77</td><td>11388.80</td><td>20.06</td><td>11405.33</td><td>BUY</td></tr>
@@ -34,7 +34,7 @@ Last updated: 2026-06-11 15:50:46 IST
   <tr><td>GODREJPROP_NS</td><td>2026-06-11 15:27:00</td><td>1621.70</td><td>2777</td><td>62.76</td><td>1618.65</td><td>1.16</td><td>1619.26</td><td>BUY</td></tr>
   <tr><td>HAVELLS_NS</td><td>2026-06-11 15:28:00</td><td>1136.00</td><td>2493</td><td>71.09</td><td>1132.42</td><td>0.76</td><td>1132.83</td><td>BUY</td></tr>
   <tr><td>HEROMOTOCO_NS</td><td>2026-06-11 15:28:00</td><td>4835.00</td><td>2699</td><td>47.42</td><td>4835.67</td><td>-1.44</td><td>4833.30</td><td>HOLD</td></tr>
-  <tr><td>HINDPETRO_NS</td><td>2026-06-11 15:27:00</td><td>366.50</td><td>78399</td><td>69.82</td><td>365.71</td><td>0.37</td><td>365.92</td><td>BUY</td></tr>
+  <tr><td>HINDPETRO_NS</td><td>2026-06-11 15:28:00</td><td>367.55</td><td>93185</td><td>79.16</td><td>365.89</td><td>0.47</td><td>366.08</td><td>BUY</td></tr>
   <tr><td>ICICIBANK_NS</td><td>2026-06-11 15:28:00</td><td>1314.40</td><td>77586</td><td>35.03</td><td>1316.39</td><td>-0.71</td><td>1316.74</td><td>SELL</td></tr>
 </table>
 
