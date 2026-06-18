@@ -33,6 +33,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script
+        env:
+          TV_USERNAME: ${{ secrets.TV_USERNAME }}
+          TV_PASSWORD: ${{ secrets.TV_PASSWORD }}
         run: python main.py
 
       - name: Commit and push changes

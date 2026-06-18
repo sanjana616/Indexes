@@ -1,354 +1,603 @@
-import os
-import sqlite3
 import json
+import sys
+import time
+import sqlite3
 import logging
-from logging.handlers import RotatingFileHandler
 from datetime import datetime
+from logging.handlers import RotatingFileHandler
+
+import pandas as pd
 import pytz
 import yfinance as yf
-import pandas as pd
-from ta.momentum import RSIIndicator
-from ta.trend import EMAIndicator, MACD
-from ta.volume import VolumeWeightedAveragePrice
-
-
-# ----------------------------
-# CONFIGURATIONS
-# ----------------------------
-DB_NAME = "nifty50_top20.db"
-README_FILE = "README.md"
-SYMBOLS_FILE = "symbols.json"
-
-# IST timezone
-IST = pytz.timezone("Asia/Kolkata")
-
-STOCKS = []
-INDEXES = []
-
-# Setup logging with file size rotation
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
-# RotatingFileHandler: 5MB max file size, keep 5 backup files
-handler = RotatingFileHandler(
-    filename="data_fetch.log",
-    maxBytes=5 * 1024 * 1024,  # 5 MB
-    backupCount=5  # Keep 5 backup files (data_fetch.log.1, .2, .3, .4, .5)
+from tvDatafeed import TvDatafeed, Interval
+from ta.trend import (
+    SMAIndicator, EMAIndicator, WMAIndicator, MACD, ADXIndicator,
+    AroonIndicator, CCIIndicator, DPOIndicator, MassIndex,
+    IchimokuIndicator, PSARIndicator, STCIndicator, TRIXIndicator,
+    VortexIndicator,
+)
+from ta.volatility import (
+    AverageTrueRange, BollingerBands, UlcerIndex,
+    KeltnerChannel, DonchianChannel,
+)
+from ta.momentum import (
+    RSIIndicator, StochasticOscillator, ROCIndicator, WilliamsRIndicator,
+    AwesomeOscillatorIndicator, KAMAIndicator, PercentagePriceOscillator,
+    TSIIndicator, UltimateOscillator,
+)
+from ta.volume import (
+    OnBalanceVolumeIndicator, ChaikinMoneyFlowIndicator,
+    AccDistIndexIndicator, MFIIndicator, ForceIndexIndicator,
+    EaseOfMovementIndicator, VolumePriceTrendIndicator,
+    NegativeVolumeIndexIndicator, VolumeWeightedAveragePrice,
 )
 
-formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+# ==========================================================
+# CONFIG
+# ==========================================================
+README_FILE  = "README.md"
+SYMBOLS_FILE = "symbols.json"
+DB_FILE      = "market_data.db"
+IST          = pytz.timezone("Asia/Kolkata")
+
+INDEX_MAP = {
+    "NIFTY50":     ("NIFTY",      "NSE"),
+    "BANKNIFTY":   ("BANKNIFTY",  "NSE"),
+    "MIDCAPNIFTY": ("MIDCPNIFTY", "NSE"),
+    "FINNIFTY":    ("FINNIFTY",   "NSE"),
+    "SENSEX":      ("SENSEX",     "BSE"),
+}
+
+YF_MAP = {
+    "NIFTY50":     "^NSEI",
+    "BANKNIFTY":   "^NSEBANK",
+    "MIDCAPNIFTY": "^NSEMDCP50",
+    "FINNIFTY":    "NIFTY_FIN_SERVICE.NS",
+    "SENSEX":      "^BSESN",
+}
+
+VOL_ETF_MAP = {
+    "NIFTY50":     "NIFTYBEES.NS",
+    "BANKNIFTY":   "BANKBEES.NS",
+    "MIDCAPNIFTY": "MIDSELIETF.NS",
+    "FINNIFTY":    "NIF100BEES.NS",
+    "SENSEX":      "SENSEXETF.NS",
+}
+
+INDEXES = []
+
+COLS = [
+    "datetime", "stock_name",
+    "open", "high", "low", "close", "volume",
+    "sma_5", "sma_10", "sma_20", "sma_50", "sma_100", "sma_200",
+    "ema_5", "ema_10", "ema_20", "ema_50", "ema_100", "ema_200",
+    "wma_10", "wma_20",
+    "macd", "macd_signal", "macd_diff",
+    "adx", "adx_pos", "adx_neg",
+    "aroon_up", "aroon_down", "aroon_indicator",
+    "cci", "dpo", "mass_index",
+    "ichimoku_a", "ichimoku_b", "ichimoku_base", "ichimoku_conv",
+    "psar", "stc", "trix",
+    "vortex_pos", "vortex_neg",
+    "kc_upper", "kc_middle", "kc_lower",
+    "dc_upper", "dc_middle", "dc_lower",
+    "atr",
+    "bb_upper", "bb_middle", "bb_lower", "bb_pband", "bb_wband",
+    "ulcer_index",
+    "rsi_7", "rsi_14", "rsi_21",
+    "stoch_k", "stoch_d",
+    "roc", "williams_r",
+    "awesome_oscillator", "kama",
+    "ppo", "tsi", "ultimate_oscillator",
+    "obv", "cmf", "acc_dist", "mfi",
+    "force_index", "eom", "vpt", "nvi", "vwap",
+    "price_change_pct",
+    "signal", "updated_at",
+]
+
+# ==========================================================
+# LOGGING
+# ==========================================================
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+_handler = RotatingFileHandler("data_fetch.log", maxBytes=5 * 1024 * 1024, backupCount=5)
+_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+logger.addHandler(_handler)
+_console = logging.StreamHandler(sys.stdout)
+_console.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+logger.addHandler(_console)
 
 
-# ----------------------------
-# HELPERS
-# ----------------------------
-def sanitize(symbol):
-    """Convert symbol to a safe SQLite table name."""
-    return symbol.replace("^", "").replace(".", "_")
+# ==========================================================
+# MARKET HOURS
+# ==========================================================
+def is_market_open() -> bool:
+    now = datetime.now(IST)
+    if now.weekday() >= 5:
+        return False
+    open_  = now.replace(hour=9,  minute=15, second=0, microsecond=0)
+    close_ = now.replace(hour=15, minute=45, second=0, microsecond=0)
+    return open_ <= now <= close_
 
 
-# ----------------------------
-# DATABASE FUNCTIONS
-# ----------------------------
+# ==========================================================
+# DATABASE
+# ==========================================================
+_CREATE_SQL = """
+    CREATE TABLE IF NOT EXISTS indexes (
+        datetime         TEXT,
+        stock_name       TEXT,
+        open             REAL, high            REAL, low             REAL,
+        close            REAL, volume          REAL,
+        sma_5            REAL, sma_10          REAL, sma_20          REAL,
+        sma_50           REAL, sma_100         REAL, sma_200         REAL,
+        ema_5            REAL, ema_10          REAL, ema_20          REAL,
+        ema_50           REAL, ema_100         REAL, ema_200         REAL,
+        wma_10           REAL, wma_20          REAL,
+        macd             REAL, macd_signal     REAL, macd_diff       REAL,
+        adx              REAL, adx_pos         REAL, adx_neg         REAL,
+        aroon_up         REAL, aroon_down      REAL, aroon_indicator REAL,
+        cci              REAL, dpo             REAL, mass_index      REAL,
+        ichimoku_a       REAL, ichimoku_b      REAL, ichimoku_base   REAL, ichimoku_conv REAL,
+        psar             REAL, stc             REAL, trix            REAL,
+        vortex_pos       REAL, vortex_neg      REAL,
+        kc_upper         REAL, kc_middle       REAL, kc_lower        REAL,
+        dc_upper         REAL, dc_middle       REAL, dc_lower        REAL,
+        atr              REAL,
+        bb_upper         REAL, bb_middle       REAL, bb_lower        REAL,
+        bb_pband         REAL, bb_wband        REAL,
+        ulcer_index      REAL,
+        rsi_7            REAL, rsi_14          REAL, rsi_21          REAL,
+        stoch_k          REAL, stoch_d         REAL,
+        roc              REAL, williams_r      REAL,
+        awesome_oscillator REAL, kama          REAL,
+        ppo              REAL, tsi             REAL, ultimate_oscillator REAL,
+        obv              REAL, cmf             REAL, acc_dist        REAL,
+        mfi              REAL, force_index     REAL, eom             REAL,
+        vpt              REAL, nvi             REAL, vwap            REAL,
+        price_change_pct REAL,
+        signal           TEXT,
+        updated_at       TEXT,
+        PRIMARY KEY (datetime, stock_name)
+    )
+"""
+
+_INSERT_SQL = """
+    INSERT OR REPLACE INTO indexes
+    ({cols})
+    VALUES ({placeholders})
+""".format(
+    cols=", ".join(COLS),
+    placeholders=", ".join(["?"] * len(COLS))
+)
+
+
 def init_db():
-    """Ensure database exists with tables for each stock and index."""
-    conn = sqlite3.connect(DB_NAME)
-    cursor = conn.cursor()
-
-    for symbol in STOCKS + INDEXES:
-        table_name = sanitize(symbol)
-        cursor.execute(f"""
-            CREATE TABLE IF NOT EXISTS '{table_name}' (
-                datetime TEXT PRIMARY KEY,
-                open REAL,
-                high REAL,
-                low REAL,
-                close REAL,
-                volume INTEGER,
-                rsi_14 REAL,
-                ema_20 REAL,
-                macd REAL,
-                macd_signal REAL,
-                vwap REAL
-            )
-        """)
-    conn.commit()
-    conn.close()
+    with sqlite3.connect(DB_FILE) as conn:
+        conn.execute(_CREATE_SQL)
+        conn.commit()
 
 
-def insert_data(table_name, df):
-    """Insert OHLCV + indicator data into database, ignoring duplicates."""
-    conn = sqlite3.connect(DB_NAME)
-    cursor = conn.cursor()
+def _to_ist_str(dt_series: pd.Series) -> pd.Series:
+    dt = pd.to_datetime(dt_series)
+    if dt.dt.tz is None:
+        dt = dt.dt.tz_localize(IST)
+    else:
+        dt = dt.dt.tz_convert(IST)
+    return dt.dt.strftime("%Y-%m-%d %H:%M")
 
-    df["datetime"] = df["datetime"].dt.tz_localize(None).astype(str)
-    df["volume"] = df["volume"].astype(int)
 
-    cols = ["datetime", "open", "high", "low", "close", "volume",
-            "rsi_14", "ema_20", "macd", "macd_signal", "vwap"]
+def insert_data(symbol: str, df: pd.DataFrame):
+    df = compute_indicators(df)
+    df = df.copy()
+    df["stock_name"]  = symbol
+    df["datetime"]    = _to_ist_str(df["datetime"])
+    df["volume"]      = df["volume"].fillna(0)
+    df["updated_at"]  = datetime.now(IST).strftime("%Y-%m-%d %H:%M:%S IST")
 
-    # Fill missing indicator columns with None
-    for col in cols:
+    # filter to Mon-Fri market hours 09:15-15:45
+    dt = pd.to_datetime(df["datetime"])
+    df = df[
+        (dt.dt.weekday < 5) &
+        (dt.dt.strftime("%H:%M") >= "09:15") &
+        (dt.dt.strftime("%H:%M") <= "15:45")
+    ]
+
+    if df.empty:
+        logger.warning("[%s] No candles within market hours", symbol)
+        return
+
+    for col in COLS:
         if col not in df.columns:
             df[col] = None
 
-    rows = df[cols].values.tolist()
-
-    cursor.executemany(
-        f"""
-        INSERT OR IGNORE INTO '{table_name}'
-        (datetime, open, high, low, close, volume, rsi_14, ema_20, macd, macd_signal, vwap)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """,
-        rows
-    )
-
-    conn.commit()
-    conn.close()
-    logger.info(f"[{table_name}] Inserted {len(rows)} rows (duplicates ignored)")
+    with sqlite3.connect(DB_FILE) as conn:
+        conn.executemany(_INSERT_SQL, df[COLS].values.tolist())
+        conn.commit()
+    logger.info("[%s] Inserted %d candles", symbol, len(df))
 
 
-# ----------------------------
-# INDICATORS
-# ----------------------------
-def compute_indicators(df, is_index=False):
+def latest_row(symbol: str):
     try:
-
-        df["rsi_14"] = RSIIndicator(
-            close=df["close"],
-            window=14
-        ).rsi()
-
-        df["ema_20"] = EMAIndicator(
-            close=df["close"],
-            window=20
-        ).ema_indicator()
-
-        macd = MACD(df["close"])
-
-        df["macd"] = macd.macd()
-        df["macd_signal"] = macd.macd_signal()
-
-        if not is_index:
-            vwap = VolumeWeightedAveragePrice(
-                high=df["high"],
-                low=df["low"],
-                close=df["close"],
-                volume=df["volume"]
+        with sqlite3.connect(DB_FILE) as conn:
+            df = pd.read_sql_query(
+                "SELECT * FROM indexes WHERE stock_name=? ORDER BY datetime DESC LIMIT 10",
+                conn, params=(symbol,)
             )
+        if df.empty:
+            return None
+        with_vol = df[df["volume"] > 0]
+        return with_vol.iloc[0] if not with_vol.empty else df.iloc[0]
+    except Exception:
+        logger.exception("Failed to read latest row for %s", symbol)
+        return None
 
-            df["vwap"] = vwap.volume_weighted_average_price()
-        else:
-            df["vwap"] = None
 
-    except Exception as e:
-        logger.error(f"Indicator error: {e}")
+# ==========================================================
+# FETCH — TRADINGVIEW
+# ==========================================================
+def fetch_tv(tv: TvDatafeed, tv_symbol: str, exchange: str, label: str) -> pd.DataFrame:
+    for attempt in range(3):
+        try:
+            df = tv.get_hist(tv_symbol, exchange, interval=Interval.in_1_minute, n_bars=1875)
+            if df is not None and not df.empty:
+                df = df.reset_index()[["datetime", "open", "high", "low", "close", "volume"]].dropna()
+                logger.info("[%s] TV fetched %d rows", label, len(df))
+                return df
+        except Exception:
+            logger.warning("[%s] TV attempt %d failed", label, attempt + 1, exc_info=True)
+            time.sleep(3)
+    return pd.DataFrame()
 
-        df["rsi_14"] = None
-        df["ema_20"] = None
-        df["macd"] = None
-        df["macd_signal"] = None
-        df["vwap"] = None
+
+# ==========================================================
+# FETCH — YFINANCE FALLBACK
+# ==========================================================
+def _yf_download(ticker: str) -> pd.DataFrame:
+    df = yf.download(ticker, period="5d", interval="1m", progress=False, auto_adjust=True)
+    if df is None or df.empty:
+        return pd.DataFrame()
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = [c[0].lower() for c in df.columns]
+    else:
+        df.columns = [c.lower() for c in df.columns]
+    df = df.reset_index()
+    df.rename(columns={df.columns[0]: "datetime"}, inplace=True)
+    return df
+
+
+def fetch_yf(label: str) -> pd.DataFrame:
+    yf_ticker = YF_MAP.get(label)
+    if not yf_ticker:
+        logger.warning("[%s] No yfinance mapping, skipping fallback", label)
+        return pd.DataFrame()
+    try:
+        df = _yf_download(yf_ticker)
+        if df.empty:
+            return pd.DataFrame()
+
+        etf_ticker = VOL_ETF_MAP.get(label)
+        if etf_ticker:
+            etf_df = _yf_download(etf_ticker)
+            if not etf_df.empty:
+                etf_df["datetime"] = pd.to_datetime(etf_df["datetime"]).dt.floor("min")
+                df["datetime"]     = pd.to_datetime(df["datetime"]).dt.floor("min")
+                merged = df[["datetime"]].merge(
+                    etf_df[["datetime", "volume"]].rename(columns={"volume": "etf_vol"}),
+                    on="datetime", how="left"
+                )
+                df["volume"] = merged["etf_vol"].ffill().fillna(0).astype(int).values
+                logger.info("[%s] ETF volume merged from %s", label, etf_ticker)
+
+        df = df[["datetime", "open", "high", "low", "close", "volume"]].dropna(subset=["close"])
+        logger.info("[%s] yfinance fetched %d rows", label, len(df))
+        return df
+    except Exception:
+        logger.exception("[%s] yfinance fetch failed", label)
+    return pd.DataFrame()
+
+
+def fetch_candles(tv: TvDatafeed, tv_symbol: str, exchange: str, label: str) -> pd.DataFrame:
+    df = fetch_tv(tv, tv_symbol, exchange, label)
+    if df.empty:
+        logger.info("[%s] Falling back to yfinance", label)
+        df = fetch_yf(label)
+    if df.empty:
+        logger.warning("[%s] No data from any source", label)
+    return df
+
+
+# ==========================================================
+# INDICATORS
+# ==========================================================
+def _safe(fn):
+    try:
+        return fn()
+    except Exception:
+        return None
+
+
+def compute_indicators(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    c, h, l, v = df["close"], df["high"], df["low"], df["volume"]
+
+    # SMA
+    df["sma_5"]   = _safe(lambda: SMAIndicator(c, 5).sma_indicator())
+    df["sma_10"]  = _safe(lambda: SMAIndicator(c, 10).sma_indicator())
+    df["sma_20"]  = _safe(lambda: SMAIndicator(c, 20).sma_indicator())
+    df["sma_50"]  = _safe(lambda: SMAIndicator(c, 50).sma_indicator())
+    df["sma_100"] = _safe(lambda: SMAIndicator(c, 100).sma_indicator())
+    df["sma_200"] = _safe(lambda: SMAIndicator(c, 200).sma_indicator())
+
+    # EMA
+    df["ema_5"]   = _safe(lambda: EMAIndicator(c, 5).ema_indicator())
+    df["ema_10"]  = _safe(lambda: EMAIndicator(c, 10).ema_indicator())
+    df["ema_20"]  = _safe(lambda: EMAIndicator(c, 20).ema_indicator())
+    df["ema_50"]  = _safe(lambda: EMAIndicator(c, 50).ema_indicator())
+    df["ema_100"] = _safe(lambda: EMAIndicator(c, 100).ema_indicator())
+    df["ema_200"] = _safe(lambda: EMAIndicator(c, 200).ema_indicator())
+
+    # WMA
+    df["wma_10"] = _safe(lambda: WMAIndicator(c, 10).wma())
+    df["wma_20"] = _safe(lambda: WMAIndicator(c, 20).wma())
+
+    # MACD
+    _macd = MACD(c)
+    df["macd"]        = _safe(lambda: _macd.macd())
+    df["macd_signal"] = _safe(lambda: _macd.macd_signal())
+    df["macd_diff"]   = _safe(lambda: _macd.macd_diff())
+
+    # ADX
+    _adx = ADXIndicator(h, l, c, 14)
+    df["adx"]     = _safe(lambda: _adx.adx())
+    df["adx_pos"] = _safe(lambda: _adx.adx_pos())
+    df["adx_neg"] = _safe(lambda: _adx.adx_neg())
+
+    # Aroon
+    _aroon = AroonIndicator(h, l, 25)
+    df["aroon_up"]        = _safe(lambda: _aroon.aroon_up())
+    df["aroon_down"]      = _safe(lambda: _aroon.aroon_down())
+    df["aroon_indicator"] = _safe(lambda: _aroon.aroon_indicator())
+
+    # CCI, DPO, Mass Index
+    df["cci"]        = _safe(lambda: CCIIndicator(h, l, c, 20).cci())
+    df["dpo"]        = _safe(lambda: DPOIndicator(c, 20).dpo())
+    df["mass_index"] = _safe(lambda: MassIndex(h, l, 9, 25).mass_index())
+
+    # Ichimoku
+    _ichi = IchimokuIndicator(h, l, 9, 26, 52)
+    df["ichimoku_a"]    = _safe(lambda: _ichi.ichimoku_a())
+    df["ichimoku_b"]    = _safe(lambda: _ichi.ichimoku_b())
+    df["ichimoku_base"] = _safe(lambda: _ichi.ichimoku_base_line())
+    df["ichimoku_conv"] = _safe(lambda: _ichi.ichimoku_conversion_line())
+
+    # PSAR, STC, TRIX
+    df["psar"] = _safe(lambda: PSARIndicator(h, l, c).psar())
+    df["stc"]  = _safe(lambda: STCIndicator(c).stc())
+    df["trix"] = _safe(lambda: TRIXIndicator(c, 15).trix())
+
+    # Vortex
+    _vortex = VortexIndicator(h, l, c, 14)
+    df["vortex_pos"] = _safe(lambda: _vortex.vortex_indicator_pos())
+    df["vortex_neg"] = _safe(lambda: _vortex.vortex_indicator_neg())
+
+    # Keltner Channel
+    _kc = KeltnerChannel(h, l, c, 20)
+    df["kc_upper"]  = _safe(lambda: _kc.keltner_channel_hband())
+    df["kc_middle"] = _safe(lambda: _kc.keltner_channel_mband())
+    df["kc_lower"]  = _safe(lambda: _kc.keltner_channel_lband())
+
+    # Donchian Channel
+    _dc = DonchianChannel(h, l, c, 20)
+    df["dc_upper"]  = _safe(lambda: _dc.donchian_channel_hband())
+    df["dc_middle"] = _safe(lambda: _dc.donchian_channel_mband())
+    df["dc_lower"]  = _safe(lambda: _dc.donchian_channel_lband())
+
+    # ATR
+    df["atr"] = _safe(lambda: AverageTrueRange(h, l, c, 14).average_true_range())
+
+    # Bollinger Bands
+    _bb = BollingerBands(c, 20, 2)
+    df["bb_upper"]  = _safe(lambda: _bb.bollinger_hband())
+    df["bb_middle"] = _safe(lambda: _bb.bollinger_mavg())
+    df["bb_lower"]  = _safe(lambda: _bb.bollinger_lband())
+    df["bb_pband"]  = _safe(lambda: _bb.bollinger_pband())
+    df["bb_wband"]  = _safe(lambda: _bb.bollinger_wband())
+
+    # Ulcer Index
+    df["ulcer_index"] = _safe(lambda: UlcerIndex(c, 14).ulcer_index())
+
+    # RSI
+    df["rsi_7"]  = _safe(lambda: RSIIndicator(c, 7).rsi())
+    df["rsi_14"] = _safe(lambda: RSIIndicator(c, 14).rsi())
+    df["rsi_21"] = _safe(lambda: RSIIndicator(c, 21).rsi())
+
+    # Stochastic
+    _stoch = StochasticOscillator(h, l, c, 14, 3)
+    df["stoch_k"] = _safe(lambda: _stoch.stoch())
+    df["stoch_d"] = _safe(lambda: _stoch.stoch_signal())
+
+    # ROC, Williams %R
+    df["roc"]       = _safe(lambda: ROCIndicator(c, 12).roc())
+    df["williams_r"] = _safe(lambda: WilliamsRIndicator(h, l, c, 14).williams_r())
+
+    # Awesome Oscillator, KAMA
+    df["awesome_oscillator"] = _safe(lambda: AwesomeOscillatorIndicator(h, l, 5, 34).awesome_oscillator())
+    df["kama"]               = _safe(lambda: KAMAIndicator(c, 10, 2, 30).kama())
+
+    # PPO, TSI, Ultimate Oscillator
+    df["ppo"] = _safe(lambda: PercentagePriceOscillator(c, 26, 12, 9).ppo())
+    df["tsi"] = _safe(lambda: TSIIndicator(c, 25, 13).tsi())
+    df["ultimate_oscillator"] = _safe(lambda: UltimateOscillator(h, l, c, 7, 14, 28).ultimate_oscillator())
+
+    # Volume indicators
+    df["obv"]        = _safe(lambda: OnBalanceVolumeIndicator(c, v).on_balance_volume())
+    df["cmf"]        = _safe(lambda: ChaikinMoneyFlowIndicator(h, l, c, v, 20).chaikin_money_flow())
+    df["acc_dist"]   = _safe(lambda: AccDistIndexIndicator(h, l, c, v).acc_dist_index())
+    df["mfi"]        = _safe(lambda: MFIIndicator(h, l, c, v, 14).money_flow_index())
+    df["force_index"] = _safe(lambda: ForceIndexIndicator(c, v, 13).force_index())
+    df["eom"]        = _safe(lambda: EaseOfMovementIndicator(h, l, v, 14).ease_of_movement())
+    df["vpt"]        = _safe(lambda: VolumePriceTrendIndicator(c, v).volume_price_trend())
+    df["nvi"]        = _safe(lambda: NegativeVolumeIndexIndicator(c, v).negative_volume_index())
+
+    # VWAP
+    df["vwap"] = _safe(lambda: VolumeWeightedAveragePrice(h, l, c, v).volume_weighted_average_price())
+
+    # Price change %
+    df["price_change_pct"] = _safe(lambda: c.pct_change() * 100)
 
     return df
 
 
-# ----------------------------
-# SIGNALS
-# ----------------------------
-def generate_signal(row):
-    """Generate BUY / SELL / HOLD based on EMA20, RSI, MACD."""
+# ==========================================================
+# SIGNAL
+# ==========================================================
+def generate_signal(row) -> str:
     try:
-        close = row["close"]
-        ema20 = row["ema_20"]
-        rsi = row["rsi_14"]
-        macd = row["macd"]
-        macd_signal = row["macd_signal"]
-
-        if pd.isna(close) or pd.isna(ema20) or pd.isna(rsi) or pd.isna(macd) or pd.isna(macd_signal):
+        required = ["close", "ema_20", "rsi_14", "macd", "macd_signal", "adx"]
+        if any(pd.isna(row[c]) for c in required):
             return "HOLD"
-
-        if close > ema20 and rsi > 50 and macd > macd_signal:
+        if (row["close"] > row["ema_20"] and row["rsi_14"] > 55
+                and row["macd"] > row["macd_signal"] and row["adx"] > 20):
             return "BUY"
-        elif close < ema20 and rsi < 50 and macd < macd_signal:
+        if (row["close"] < row["ema_20"] and row["rsi_14"] < 45
+                and row["macd"] < row["macd_signal"] and row["adx"] > 20):
             return "SELL"
-        return "HOLD"
     except Exception:
-        return "HOLD"
+        logger.exception("Signal generation failed")
+    return "HOLD"
 
 
-# ----------------------------
-# DATA FETCHING
-# ----------------------------
-def fetch_stock_data(symbol, is_index=False):
-    """Fetch 1-min OHLCV data for the day and compute indicators."""
-    try:
-        df = yf.download(
-            tickers=symbol,
-            interval="1m",
-            period="1d",
-            auto_adjust=True,
-            progress=False
-        )
-
-        if df.empty:
-            logger.warning(f"No data returned for {symbol}")
-            return None
-
-        df = df.droplevel("Ticker", axis=1)
-        df.reset_index(inplace=True)
-
-        df = df.iloc[:-1]
-        
-        df["Datetime"] = df["Datetime"].dt.tz_convert(IST)
-        df["Volume"] = pd.to_numeric(df["Volume"], errors="coerce").fillna(0).astype(int)
-
-        df.rename(columns={
-            "Datetime": "datetime",
-            "Open": "open",
-            "High": "high",
-            "Low": "low",
-            "Close": "close",
-            "Volume": "volume"
-        }, inplace=True)
-
-        df = df[["datetime", "open", "high", "low", "close", "volume"]].copy()
-        df = compute_indicators(df, is_index=is_index)
-
-        return df
-
-    except Exception as e:
-        logger.error(f"Error fetching data for {symbol}: {e}")
-        return None
-
-
-# ----------------------------
-# README UPDATE
-# ----------------------------
+# ==========================================================
+# README
+# ==========================================================
 def update_readme():
-    """Write README with latest row per symbol, split into INDEXES and STOCKS sections."""
-    conn = sqlite3.connect(DB_NAME)
-
-    title = f"# 📈 {README_FILE[:-3]} Data Snapshot\n\n"
-    if os.path.exists(README_FILE):
-        with open(README_FILE, "r", encoding="utf-8") as f:
-            first_line = f.readline()
-            if first_line.startswith("# "):
-                title = first_line + "\n"
-
-    header = "  <tr><th>Symbol</th><th>Datetime</th><th>Close</th><th>Volume</th><th>RSI</th><th>EMA20</th><th>MACD</th><th>VWAP</th><th>Signal</th></tr>\n"
-
-    def build_rows(symbols):
-        rows_html = ""
-        for symbol in symbols:
-            table_name = sanitize(symbol)
-            try:
-                df = pd.read_sql_query(
-                    f"""SELECT datetime, close, volume, rsi_14, ema_20, macd, macd_signal, vwap
-                        FROM '{table_name}' ORDER BY datetime DESC LIMIT 1""",
-                    conn
-                )
-                if df.empty:
-                    continue
-
-                row = df.iloc[0]
-                signal = generate_signal(row)
-
-                def fmt(val, dec=2):
-                    return f"{val:.{dec}f}" if pd.notna(val) else "-"
-
-                rows_html += (
-                    f"  <tr>"
-                    f"<td>{table_name}</td>"
-                    f"<td>{row['datetime']}</td>"
-                    f"<td>{fmt(row['close'])}</td>"
-                    f"<td>{int(row['volume']) if pd.notna(row['volume']) else '-'}</td>"
-                    f"<td>{fmt(row['rsi_14'])}</td>"
-                    f"<td>{fmt(row['ema_20'])}</td>"
-                    f"<td>{fmt(row['macd'])}</td>"
-                    f"<td>{fmt(row['vwap'])}</td>"
-                    f"<td>{signal}</td>"
-                    f"</tr>\n"
-                )
-            except Exception as e:
-                logger.error(f"Error reading README data for {symbol}: {e}")
-        return rows_html
+    ICONS = {"BUY": "🟢 BUY", "SELL": "🔴 SELL", "HOLD": "🟡 HOLD"}
+    fmt   = lambda x: f"{x:.2f}" if pd.notna(x) else "-"
 
     with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write(title)
-        f.write(f"Last updated: {datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S %Z')}\n\n")
+        f.write(f"Last updated: {datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S IST')}\n\n")
 
-        # MARKET INDEXES section
-        f.write("## 📊 MARKET INDEXES\n\n")
-        f.write("<table>\n")
-        f.write(header)
-        f.write(build_rows(INDEXES))
-        f.write("</table>\n\n")
+        # ── Summary Table ──────────────────────────────────────
+        f.write("## 📊 Market Indexes — Summary\n\n")
+        f.write("| Symbol | Time (IST) | Close | Volume | RSI(14) | EMA20 | MACD | ATR | ADX | Signal |\n")
+        f.write("|--------|-----------|-------|--------|---------|-------|------|-----|-----|--------|\n")
+        for sym in INDEXES:
+            row = latest_row(sym)
+            if row is None:
+                continue
+            signal = generate_signal(row)
+            volume = int(row["volume"]) if pd.notna(row["volume"]) else 0
+            f.write(
+                f"| {sym} | {row['datetime']} | {fmt(row['close'])} | {volume:,} "
+                f"| {fmt(row['rsi_14'])} | {fmt(row['ema_20'])} | {fmt(row['macd'])} "
+                f"| {fmt(row['atr'])} | {fmt(row['adx'])} | {ICONS[signal]} |\n"
+            )
 
-        # STOCKS section
-        f.write("## 📈 STOCKS\n\n")
-        f.write("<table>\n")
-        f.write(header)
-        f.write(build_rows(STOCKS))
-        f.write("</table>\n\n")
+        # ── Per Symbol Detail ──────────────────────────────────
+        for sym in INDEXES:
+            row = latest_row(sym)
+            if row is None:
+                continue
+            signal = generate_signal(row)
+            f.write(f"\n---\n\n### {sym} &nbsp; {ICONS[signal]}\n\n")
+            f.write(f"> {row['datetime']} &nbsp;|&nbsp; "
+                    f"O: {fmt(row['open'])} &nbsp; "
+                    f"H: {fmt(row['high'])} &nbsp; "
+                    f"L: {fmt(row['low'])} &nbsp; "
+                    f"C: **{fmt(row['close'])}** &nbsp;|&nbsp; "
+                    f"Vol: {int(row['volume']):,}\n\n")
 
-    conn.close()
+            sections = [
+                ("📈 Moving Averages", [
+                    ("SMA 5",   "sma_5"),   ("SMA 10",  "sma_10"),  ("SMA 20",  "sma_20"),
+                    ("SMA 50",  "sma_50"),  ("SMA 100", "sma_100"), ("SMA 200", "sma_200"),
+                    ("EMA 5",   "ema_5"),   ("EMA 10",  "ema_10"),  ("EMA 20",  "ema_20"),
+                    ("EMA 50",  "ema_50"),  ("EMA 100", "ema_100"), ("EMA 200", "ema_200"),
+                    ("WMA 10",  "wma_10"),  ("WMA 20",  "wma_20"),
+                ]),
+                ("⚡ Momentum & Trend", [
+                    ("MACD",        "macd"),        ("MACD Signal", "macd_signal"), ("MACD Diff",  "macd_diff"),
+                    ("ADX",         "adx"),         ("ADX+",        "adx_pos"),     ("ADX-",       "adx_neg"),
+                    ("RSI 7",       "rsi_7"),       ("RSI 14",      "rsi_14"),      ("RSI 21",     "rsi_21"),
+                    ("Stoch %K",    "stoch_k"),     ("Stoch %D",    "stoch_d"),
+                    ("ROC",         "roc"),         ("Williams %R", "williams_r"),  ("CCI",        "cci"),
+                    ("DPO",         "dpo"),         ("AO",          "awesome_oscillator"),
+                    ("KAMA",        "kama"),        ("PPO",         "ppo"),          ("TSI",        "tsi"),
+                    ("Ult. Osc",    "ultimate_oscillator"),
+                ]),
+                ("🎯 Trend Indicators", [
+                    ("Aroon Up",    "aroon_up"),    ("Aroon Down",  "aroon_down"),  ("Aroon Ind",  "aroon_indicator"),
+                    ("Vortex+",     "vortex_pos"),  ("Vortex-",     "vortex_neg"),
+                    ("Mass Index",  "mass_index"),  ("TRIX",        "trix"),        ("STC",        "stc"),
+                    ("DPO",         "dpo"),         ("PSAR",        "psar"),
+                    ("Ichi A",      "ichimoku_a"),  ("Ichi B",      "ichimoku_b"),
+                    ("Ichi Base",   "ichimoku_base"),("Ichi Conv",  "ichimoku_conv"),
+                ]),
+                ("📊 Volatility & Channels", [
+                    ("ATR",         "atr"),         ("Ulcer Idx",   "ulcer_index"),
+                    ("BB Upper",    "bb_upper"),    ("BB Mid",      "bb_middle"),   ("BB Lower",   "bb_lower"),
+                    ("BB %B",       "bb_pband"),    ("BB Width",    "bb_wband"),
+                    ("KC Upper",    "kc_upper"),    ("KC Mid",      "kc_middle"),   ("KC Lower",   "kc_lower"),
+                    ("DC Upper",    "dc_upper"),    ("DC Mid",      "dc_middle"),   ("DC Lower",   "dc_lower"),
+                ]),
+                ("💹 Volume Indicators", [
+                    ("OBV",         "obv"),         ("CMF",         "cmf"),         ("Acc/Dist",   "acc_dist"),
+                    ("MFI",         "mfi"),         ("Force Idx",   "force_index"), ("EOM",        "eom"),
+                    ("VPT",         "vpt"),         ("NVI",         "nvi"),         ("VWAP",       "vwap"),
+                    ("Chg %",       "price_change_pct"),
+                ]),
+            ]
+
+            for section_name, indicators in sections:
+                f.write(f"**{section_name}**\n\n")
+                f.write("| Indicator | Value | Indicator | Value | Indicator | Value |\n")
+                f.write("|-----------|-------|-----------|-------|-----------|-------|\n")
+                # group into rows of 3
+                for i in range(0, len(indicators), 3):
+                    chunk = indicators[i:i+3]
+                    while len(chunk) < 3:
+                        chunk.append(("", ""))
+                    cells = ""
+                    for label, key in chunk:
+                        val = fmt(row.get(key)) if key else ""
+                        cells += f"| {label} | {val} "
+                    f.write(cells + "|\n")
+                f.write("\n")
 
 
-# ----------------------------
-# MAIN WORKFLOW
-# ----------------------------
+# ==========================================================
+# MAIN
+# ==========================================================
 def main():
-    logger.info("Starting data fetch cycle...")
+
+    logger.info("Starting fetch cycle")
+    tv = TvDatafeed()
     init_db()
 
     for symbol in INDEXES:
-        df = fetch_stock_data(symbol, is_index=True)
-        if df is not None and not df.empty:
-            insert_data(sanitize(symbol), df)
-            logger.info(f"Inserted {len(df)} rows for {symbol}")
-        else:
-            logger.warning(f"No data to insert for {symbol}")
-
-    for symbol in STOCKS:
-        df = fetch_stock_data(symbol, is_index=False)
-        if df is not None and not df.empty:
-            insert_data(sanitize(symbol), df)
-            logger.info(f"Inserted {len(df)} rows for {symbol}")
-        else:
-            logger.warning(f"No data to insert for {symbol}")
+        try:
+            tv_symbol, exchange = INDEX_MAP[symbol]
+            df = fetch_candles(tv, tv_symbol, exchange, symbol)
+            if not df.empty:
+                insert_data(symbol, df)
+        except Exception:
+            logger.exception("[%s] Failed", symbol)
+        time.sleep(2)
 
     update_readme()
     logger.info("Cycle complete. README updated.")
 
 
 if __name__ == "__main__":
-    IST = pytz.timezone("Asia/Kolkata")
-    SYMBOLS_FILE = "symbols.json"
     try:
-        if not os.path.exists(SYMBOLS_FILE):
-            raise FileNotFoundError(f"Symbols file not found: {SYMBOLS_FILE}")
-
         with open(SYMBOLS_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
+        INDEXES = data.get("Indexes", [])
+        if not INDEXES:
+            raise ValueError("'Indexes' list is empty in symbols.json")
+    except Exception:
+        logger.exception("Startup error")
+        raise SystemExit(1)
 
-        symbols_key = "Mid Cap"
-        stocks = data.get(symbols_key)
-        if not isinstance(stocks, list) or not stocks:
-            raise ValueError(f"Invalid or empty list in {SYMBOLS_FILE} for key '{symbols_key}'")
-
-        indexes = data.get("Indexes")
-        if not isinstance(indexes, list) or not indexes:
-            raise ValueError(f"Invalid or empty list in {SYMBOLS_FILE} for key 'Indexes'")
-
-    except Exception as e:
-        logger.error(f"Error loading symbols: {e}")
-        exit(1)
-
-    STOCKS = stocks
-    INDEXES = indexes
-    DB_NAME = f"{symbols_key}.db"
-    README_FILE = "README.md"
     main()

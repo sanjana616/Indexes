@@ -9948,3 +9948,1569 @@
 2026-06-12 01:45:53,870 - INFO - [ICICIBANK_NS] Inserted 374 rows (duplicates ignored)
 2026-06-12 01:45:53,870 - INFO - Inserted 374 rows for ICICIBANK.NS
 2026-06-12 01:45:53,883 - INFO - Cycle complete. README updated.
+2026-06-13 10:58:44,256 - INFO - Starting data fetch cycle...
+2026-06-13 10:58:44,715 - WARNING - No data for NIFTY50
+2026-06-13 10:58:44,721 - WARNING - No data for index NIFTY50
+2026-06-13 10:58:44,996 - WARNING - No data for BANKNIFTY
+2026-06-13 10:58:44,996 - WARNING - No data for index BANKNIFTY
+2026-06-13 10:58:45,433 - WARNING - No data for MIDCAPNIFTY
+2026-06-13 10:58:45,435 - WARNING - No data for index MIDCAPNIFTY
+2026-06-13 10:58:45,844 - WARNING - No data for FINNIFTY
+2026-06-13 10:58:45,844 - WARNING - No data for index FINNIFTY
+2026-06-13 10:58:45,850 - INFO - Cycle complete. README updated.
+2026-06-13 10:59:49,199 - INFO - Starting data fetch cycle...
+2026-06-13 10:59:49,486 - WARNING - No data for NIFTY50
+2026-06-13 10:59:49,490 - WARNING - No data for index NIFTY50
+2026-06-13 10:59:49,729 - WARNING - No data for BANKNIFTY
+2026-06-13 10:59:49,732 - WARNING - No data for index BANKNIFTY
+2026-06-13 10:59:50,205 - WARNING - No data for MIDCAPNIFTY
+2026-06-13 10:59:50,205 - WARNING - No data for index MIDCAPNIFTY
+2026-06-13 10:59:50,386 - WARNING - No data for FINNIFTY
+2026-06-13 10:59:50,386 - WARNING - No data for index FINNIFTY
+2026-06-13 10:59:50,389 - INFO - Cycle complete. README updated.
+2026-06-13 11:00:37,769 - INFO - Starting data fetch cycle...
+2026-06-13 11:00:38,615 - INFO - [NIFTY50] fetched 58 rows
+2026-06-13 11:00:38,790 - INFO - [BANKNIFTY] fetched 58 rows
+2026-06-13 11:00:38,950 - INFO - [MIDCAPNIFTY] fetched 58 rows
+2026-06-13 11:00:39,265 - INFO - [FINNIFTY] fetched 58 rows
+2026-06-13 11:00:39,305 - INFO - Cycle complete. README updated.
+2026-06-13 12:53:06,932 - INFO - Starting data fetch cycle...
+2026-06-13 12:53:07,760 - INFO - [NIFTY50] fetched 58 rows
+2026-06-13 12:53:07,933 - INFO - [BANKNIFTY] fetched 58 rows
+2026-06-13 12:53:08,087 - INFO - [MIDCAPNIFTY] fetched 58 rows
+2026-06-13 12:53:08,367 - INFO - [FINNIFTY] fetched 58 rows
+2026-06-13 12:53:08,383 - ERROR - Fetch error for SENSEX: 'SENSEX'
+2026-06-13 12:53:08,384 - WARNING - No data for index SENSEX
+2026-06-13 12:53:08,388 - INFO - Cycle complete. README updated.
+2026-06-17 19:44:24,853 - INFO - Starting data fetch cycle...
+2026-06-17 19:44:25,696 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 19:44:26,339 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 19:44:31,835 - WARNING - No data for SENSEX1!
+2026-06-17 19:44:32,666 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 19:44:33,289 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 19:44:38,828 - WARNING - No data for NIFTY50
+2026-06-17 19:44:39,571 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 19:44:39,612 - INFO - [BANKNIFTY] Injected futures volume for 375/375 rows
+2026-06-17 19:44:40,364 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 19:44:40,364 - WARNING - [SENSEX] No futures mapping found — volume will be NaN
+2026-06-17 19:44:45,873 - WARNING - No data for MIDCAPNIFTY
+2026-06-17 19:44:51,388 - WARNING - No data for FINNIFTY
+2026-06-17 19:44:51,456 - INFO - Cycle complete. README updated.
+2026-06-17 20:15:07,580 - INFO - Starting data fetch cycle...
+2026-06-17 20:15:09,109 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 20:15:10,464 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 20:15:16,505 - WARNING - No data for SENSEX1!
+2026-06-17 20:15:17,876 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 20:15:19,240 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 20:15:25,274 - WARNING - No data for NIFTY50
+2026-06-17 20:15:26,659 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 20:15:26,668 - INFO - [BANKNIFTY] Injected futures volume for 375/375 rows
+2026-06-17 20:15:28,267 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 20:15:28,274 - WARNING - [SENSEX] No futures mapping found — volume will be NaN
+2026-06-17 20:15:34,301 - WARNING - No data for MIDCAPNIFTY
+2026-06-17 20:15:40,326 - WARNING - No data for FINNIFTY
+2026-06-17 20:15:40,491 - INFO - Cycle complete. README updated.
+2026-06-17 20:17:53,596 - INFO - Starting data fetch cycle...
+2026-06-17 20:17:56,628 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 20:17:57,347 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 20:18:02,868 - WARNING - No data for SENSEX1!
+2026-06-17 20:18:03,798 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 20:18:04,606 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 20:18:10,079 - WARNING - No data for NIFTY50
+2026-06-17 20:18:10,844 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 20:18:10,853 - INFO - [BANKNIFTY] Injected futures volume for 375/375 rows
+2026-06-17 20:18:11,626 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 20:18:11,626 - WARNING - [SENSEX] No futures mapping found — volume will be NaN
+2026-06-17 20:18:17,292 - WARNING - No data for MIDCAPNIFTY
+2026-06-17 20:18:22,872 - WARNING - No data for FINNIFTY
+2026-06-17 20:18:24,328 - INFO - Cycle complete. README updated.
+2026-06-17 20:23:40,621 - INFO - Starting data fetch cycle...
+2026-06-17 20:23:46,531 - WARNING - No data for NIFTY1!
+2026-06-17 20:23:55,628 - WARNING - No data for BANKNIFTY1!
+2026-06-17 20:24:04,024 - WARNING - No data for SENSEX1!
+2026-06-17 20:24:07,472 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 20:24:12,177 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 20:24:20,519 - WARNING - No data for NIFTY50
+2026-06-17 20:24:23,861 - INFO - Starting data fetch cycle...
+2026-06-17 20:24:24,189 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 20:24:24,197 - WARNING - [BANKNIFTY] No futures mapping found — volume will be NaN
+2026-06-17 20:24:30,382 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 20:24:32,921 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 20:24:32,921 - WARNING - [SENSEX] No futures mapping found — volume will be NaN
+2026-06-17 20:24:33,896 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 20:24:41,256 - WARNING - No data for MIDCAPNIFTY
+2026-06-17 20:24:42,242 - WARNING - No data for SENSEX1!
+2026-06-17 20:24:46,571 - WARNING - No data for FINNIFTY
+2026-06-17 20:24:46,601 - INFO - Cycle complete. README updated.
+2026-06-17 20:24:50,525 - WARNING - No data for MIDCPNIFTY1!
+2026-06-17 20:24:56,899 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 20:25:05,130 - WARNING - No data for NIFTY50
+2026-06-17 20:25:05,529 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 20:25:05,546 - INFO - [BANKNIFTY] Injected futures volume for 375/375 rows
+2026-06-17 20:25:14,561 - WARNING - No data for SENSEX
+2026-06-17 20:25:20,747 - WARNING - No data for MIDCAPNIFTY
+2026-06-17 20:25:26,888 - WARNING - No data for FINNIFTY
+2026-06-17 20:25:26,967 - INFO - Cycle complete. README updated.
+2026-06-17 22:17:07,023 - INFO - Starting fetch cycle
+2026-06-17 22:17:07,708 - INFO - NIFTY50: fetched 58 rows
+2026-06-17 22:17:07,910 - INFO - BANKNIFTY: fetched 58 rows
+2026-06-17 22:17:08,109 - INFO - SENSEX: fetched 58 rows
+2026-06-17 22:17:08,297 - INFO - MIDCAPNIFTY: fetched 58 rows
+2026-06-17 22:17:08,486 - INFO - FINNIFTY: fetched 56 rows
+2026-06-17 22:17:08,510 - INFO - README updated successfully
+2026-06-17 22:28:39,157 - INFO - Starting fetch cycle
+2026-06-17 22:28:39,484 - INFO - NIFTY50: fetched 60 rows
+2026-06-17 22:28:39,949 - INFO - BANKNIFTY: fetched 60 rows
+2026-06-17 22:28:40,451 - INFO - MIDCAPNIFTY: fetched 60 rows
+2026-06-17 22:28:40,977 - INFO - FINNIFTY: fetched 60 rows
+2026-06-17 22:28:46,437 - WARNING - No data found for SENSEX
+2026-06-17 22:28:46,443 - INFO - README updated successfully
+2026-06-17 22:32:12,098 - INFO - Starting fetch cycle
+2026-06-17 22:32:17,985 - INFO - NIFTY50: fetched 60 rows
+2026-06-17 22:32:23,736 - INFO - BANKNIFTY: fetched 60 rows
+2026-06-17 22:32:29,520 - INFO - MIDCAPNIFTY: fetched 60 rows
+2026-06-17 22:32:35,328 - INFO - FINNIFTY: fetched 60 rows
+2026-06-17 22:32:45,849 - WARNING - No data found for SENSEX
+2026-06-17 22:32:45,884 - INFO - README updated successfully
+2026-06-17 22:39:35,516 - INFO - Starting fetch cycle
+2026-06-17 22:39:35,796 - INFO - NIFTY50: fetched 60 rows
+2026-06-17 22:39:36,345 - INFO - BANKNIFTY: fetched 60 rows
+2026-06-17 22:39:36,861 - INFO - MIDCAPNIFTY: fetched 60 rows
+2026-06-17 22:39:37,370 - INFO - FINNIFTY: fetched 60 rows
+2026-06-17 22:39:38,280 - INFO - SENSEX: fetched 60 rows
+2026-06-17 22:39:38,334 - INFO - README updated successfully
+2026-06-17 22:42:53,834 - INFO - Starting fetch cycle
+2026-06-17 22:42:53,834 - WARNING - NIFTY50: attempt 1 failed : name 'in_1_minute' is not defined
+2026-06-17 22:42:55,841 - WARNING - NIFTY50: attempt 2 failed : name 'in_1_minute' is not defined
+2026-06-17 22:42:57,843 - WARNING - NIFTY50: attempt 3 failed : name 'in_1_minute' is not defined
+2026-06-17 22:42:59,852 - WARNING - No data found for NIFTY50
+2026-06-17 22:42:59,852 - WARNING - BANKNIFTY: attempt 1 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:01,855 - WARNING - BANKNIFTY: attempt 2 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:03,857 - WARNING - BANKNIFTY: attempt 3 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:05,858 - WARNING - No data found for BANKNIFTY
+2026-06-17 22:43:05,858 - WARNING - MIDCAPNIFTY: attempt 1 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:07,861 - WARNING - MIDCAPNIFTY: attempt 2 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:09,863 - WARNING - MIDCAPNIFTY: attempt 3 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:11,905 - WARNING - No data found for MIDCAPNIFTY
+2026-06-17 22:43:11,905 - WARNING - FINNIFTY: attempt 1 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:13,927 - WARNING - FINNIFTY: attempt 2 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:15,928 - WARNING - FINNIFTY: attempt 3 failed : name 'in_1_minute' is not defined
+2026-06-17 22:43:20,211 - INFO - Starting fetch cycle
+2026-06-17 22:43:20,546 - INFO - NIFTY50: fetched 375 rows
+2026-06-17 22:43:21,028 - INFO - BANKNIFTY: fetched 375 rows
+2026-06-17 22:43:21,566 - INFO - MIDCAPNIFTY: fetched 375 rows
+2026-06-17 22:43:22,045 - INFO - FINNIFTY: fetched 375 rows
+2026-06-17 22:43:22,548 - INFO - SENSEX: fetched 375 rows
+2026-06-17 22:43:22,600 - INFO - README updated successfully
+2026-06-17 22:48:17,236 - INFO - Starting fetch cycle
+2026-06-17 22:48:59,680 - INFO - Starting fetch cycle
+2026-06-17 22:49:15,546 - WARNING - [NIFTY50] no data returned
+2026-06-17 22:49:15,930 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 22:49:16,015 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 22:49:16,361 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 22:49:16,411 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 22:49:32,254 - WARNING - [MIDCAPNIFTY] no data returned
+2026-06-17 22:49:47,995 - WARNING - [FINNIFTY] no data returned
+2026-06-17 22:49:48,328 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 22:49:48,379 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 22:49:48,860 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 22:49:48,912 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 22:50:04,802 - WARNING - [SENSEX1!] no data returned
+2026-06-17 22:50:05,182 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 22:50:05,232 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 22:50:05,830 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 22:50:05,902 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 22:50:05,950 - INFO - Cycle complete. README updated.
+2026-06-17 22:51:56,620 - INFO - Starting fetch cycle
+2026-06-17 22:52:12,361 - WARNING - [NIFTY50] no data returned
+2026-06-17 22:52:12,651 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 22:53:14,516 - INFO - Starting fetch cycle
+2026-06-17 22:53:30,450 - WARNING - [NIFTY50] no data returned
+2026-06-17 22:53:30,733 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 22:53:30,825 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 22:53:31,275 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 22:53:31,331 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 22:53:47,169 - WARNING - [MIDCAPNIFTY] no data returned
+2026-06-17 22:54:02,926 - WARNING - [FINNIFTY] no data returned
+2026-06-17 22:54:03,241 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 22:54:03,326 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 22:54:03,754 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 22:54:03,818 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 22:54:19,700 - WARNING - [SENSEX1!] no data returned
+2026-06-17 22:54:20,634 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 22:54:20,710 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 22:54:21,133 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 22:54:21,220 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 22:54:21,276 - INFO - Cycle complete. README updated.
+2026-06-17 22:57:47,422 - INFO - Starting fetch cycle
+2026-06-17 22:58:03,148 - WARNING - [NIFTY50] no data returned
+2026-06-17 22:58:03,531 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 22:58:03,588 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 22:58:04,063 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 22:58:04,079 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 22:58:19,930 - WARNING - [MIDCAPNIFTY] no data returned
+2026-06-17 22:58:35,628 - WARNING - [FINNIFTY] no data returned
+2026-06-17 22:58:35,989 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 22:58:36,013 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 22:58:36,545 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 22:58:36,571 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 22:58:52,462 - WARNING - [SENSEX1!] no data returned
+2026-06-17 22:58:52,819 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 22:58:52,853 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 22:58:53,481 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 22:58:53,499 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 22:58:53,526 - INFO - Cycle complete. README updated.
+2026-06-17 22:59:10,906 - INFO - Starting fetch cycle
+2026-06-17 22:59:26,587 - WARNING - [NIFTY50] no data returned
+2026-06-17 22:59:26,928 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 22:59:26,983 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 22:59:28,060 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 22:59:28,097 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 22:59:28,384 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-17 22:59:28,480 - INFO - [MIDCAPNIFTY] inserted 375 rows
+2026-06-17 22:59:28,892 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-17 22:59:28,970 - INFO - [FINNIFTY] inserted 375 rows
+2026-06-17 22:59:29,425 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 22:59:29,463 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 22:59:29,880 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 22:59:29,904 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 22:59:45,803 - WARNING - [SENSEX1!] no data returned
+2026-06-17 22:59:46,154 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 22:59:46,186 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 22:59:46,587 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 22:59:46,607 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 22:59:46,620 - INFO - Cycle complete. README updated.
+2026-06-17 23:00:02,679 - INFO - Starting fetch cycle
+2026-06-17 23:00:18,343 - WARNING - [NIFTY50] no data returned
+2026-06-17 23:00:18,662 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 23:00:18,694 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 23:00:19,236 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 23:00:19,260 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 23:00:19,652 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-17 23:00:19,686 - INFO - [MIDCAPNIFTY] inserted 375 rows
+2026-06-17 23:00:20,164 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-17 23:00:20,187 - INFO - [FINNIFTY] inserted 375 rows
+2026-06-17 23:00:20,635 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 23:00:20,680 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 23:00:21,180 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 23:00:21,217 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 23:00:37,029 - WARNING - [SENSEX1!] no data returned
+2026-06-17 23:00:37,329 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 23:00:37,357 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 23:00:37,885 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 23:00:37,910 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 23:00:37,942 - INFO - Cycle complete. README updated.
+2026-06-17 23:02:47,859 - INFO - Starting fetch cycle
+2026-06-17 23:02:48,317 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 23:02:48,363 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 23:02:48,810 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 23:02:48,901 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 23:02:49,318 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-17 23:02:49,413 - INFO - [MIDCAPNIFTY] inserted 375 rows
+2026-06-17 23:02:49,810 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-17 23:02:49,897 - INFO - [FINNIFTY] inserted 375 rows
+2026-06-17 23:02:50,893 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 23:02:50,971 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 23:02:51,302 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 23:02:51,370 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 23:02:51,799 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 23:02:51,833 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 23:02:52,326 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 23:02:52,387 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 23:02:52,402 - INFO - Cycle complete. README updated.
+2026-06-17 23:29:13,123 - INFO - Starting fetch cycle
+2026-06-17 23:29:13,498 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 23:29:13,567 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 23:29:13,942 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 23:29:14,014 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 23:29:14,465 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-17 23:29:14,510 - INFO - [MIDCAPNIFTY] inserted 375 rows
+2026-06-17 23:29:14,962 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-17 23:29:15,081 - INFO - [FINNIFTY] inserted 375 rows
+2026-06-17 23:29:15,448 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 23:29:15,564 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 23:29:15,958 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 23:29:16,030 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 23:29:16,507 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 23:29:16,557 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 23:29:17,005 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 23:29:17,064 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 23:29:17,083 - INFO - Cycle complete. README updated.
+2026-06-17 23:31:38,374 - INFO - Starting fetch cycle
+2026-06-17 23:31:38,851 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-17 23:31:38,936 - INFO - [BANKNIFTY] inserted 375 rows
+2026-06-17 23:31:39,330 - INFO - [SENSEX] fetched 375 rows
+2026-06-17 23:31:39,420 - INFO - [SENSEX] inserted 375 rows
+2026-06-17 23:31:39,941 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-17 23:31:40,011 - INFO - [MIDCAPNIFTY] inserted 375 rows
+2026-06-17 23:31:40,363 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-17 23:31:40,403 - INFO - [FINNIFTY] inserted 375 rows
+2026-06-17 23:31:40,881 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-17 23:31:40,943 - INFO - [NIFTY1!] inserted 375 rows
+2026-06-17 23:31:41,330 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-17 23:31:41,392 - INFO - [BANKNIFTY1!] inserted 375 rows
+2026-06-17 23:31:41,843 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-17 23:31:41,908 - INFO - [MIDCPNIFTY1!] inserted 375 rows
+2026-06-17 23:31:42,345 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-17 23:31:42,398 - INFO - [FINNIFTY1!] inserted 375 rows
+2026-06-17 23:31:42,426 - INFO - Cycle complete. README updated.
+2026-06-17 23:42:20,549 - INFO - Starting fetch cycle
+2026-06-17 23:42:21,258 - INFO - [NIFTY50] fetched 58 rows
+2026-06-17 23:42:21,291 - INFO - [NIFTY50] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:42:21,424 - INFO - [BANKNIFTY] fetched 58 rows
+2026-06-17 23:42:21,462 - INFO - [BANKNIFTY] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:42:21,599 - INFO - [SENSEX] fetched 58 rows
+2026-06-17 23:42:21,668 - INFO - [SENSEX] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:42:21,857 - INFO - [MIDCAPNIFTY] fetched 58 rows
+2026-06-17 23:42:21,925 - INFO - [MIDCAPNIFTY] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:42:22,058 - INFO - [FINNIFTY] fetched 56 rows
+2026-06-17 23:42:22,127 - INFO - [FINNIFTY] Inserted 56 rows (duplicates ignored)
+2026-06-17 23:42:22,152 - INFO - Cycle complete. README updated.
+2026-06-17 23:43:13,625 - INFO - Starting fetch cycle
+2026-06-17 23:43:14,511 - INFO - [NIFTY50] fetched 58 rows
+2026-06-17 23:43:14,581 - INFO - [NIFTY50] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:43:14,802 - INFO - [BANKNIFTY] fetched 58 rows
+2026-06-17 23:43:14,842 - INFO - [BANKNIFTY] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:43:15,032 - INFO - [SENSEX] fetched 58 rows
+2026-06-17 23:43:15,100 - INFO - [SENSEX] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:43:15,290 - INFO - [MIDCAPNIFTY] fetched 58 rows
+2026-06-17 23:43:15,359 - INFO - [MIDCAPNIFTY] Inserted 58 rows (duplicates ignored)
+2026-06-17 23:43:15,543 - INFO - [FINNIFTY] fetched 56 rows
+2026-06-17 23:43:15,623 - INFO - [FINNIFTY] Inserted 56 rows (duplicates ignored)
+2026-06-17 23:43:15,647 - INFO - Cycle complete. README updated.
+2026-06-17 23:59:45,109 - INFO - Starting fetch cycle
+2026-06-17 23:59:45,109 - INFO - TradingView session token injected
+2026-06-17 23:59:46,611 - WARNING - [NIFTY50] no data returned
+2026-06-17 23:59:49,974 - WARNING - [BANKNIFTY] no data returned
+2026-06-17 23:59:53,384 - WARNING - [SENSEX] no data returned
+2026-06-17 23:59:56,711 - WARNING - [MIDCAPNIFTY] no data returned
+2026-06-18 00:00:00,013 - WARNING - [FINNIFTY] no data returned
+2026-06-18 00:00:03,388 - WARNING - [NIFTY1!] no data returned
+2026-06-18 00:00:06,711 - WARNING - [BANKNIFTY1!] no data returned
+2026-06-18 00:00:10,080 - WARNING - [SENSEX1!] no data returned
+2026-06-18 00:00:13,428 - WARNING - [MIDCPNIFTY1!] no data returned
+2026-06-18 00:00:16,836 - WARNING - [FINNIFTY1!] no data returned
+2026-06-18 00:00:18,918 - INFO - Cycle complete. README updated.
+2026-06-18 09:54:14,320 - INFO - Starting fetch cycle
+2026-06-18 09:54:14,320 - INFO - Logging in to TradingView with credentials
+2026-06-18 09:54:30,823 - WARNING - [NIFTY50] no data returned
+2026-06-18 09:54:35,381 - INFO - Starting fetch cycle
+2026-06-18 09:54:35,381 - INFO - Logging in to TradingView with credentials
+2026-06-18 09:54:53,131 - WARNING - [NIFTY50] no data returned
+2026-06-18 09:54:59,825 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-18 09:54:59,898 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 09:55:07,966 - INFO - [SENSEX] fetched 375 rows
+2026-06-18 09:55:08,027 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 09:55:18,718 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-18 09:55:18,791 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 09:55:22,471 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-18 09:55:22,538 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 09:55:26,170 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-18 09:55:26,211 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 09:55:29,816 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-18 09:55:29,855 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 09:55:50,245 - WARNING - [SENSEX1!] no data returned
+2026-06-18 09:55:54,022 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-18 09:55:54,058 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 09:55:57,841 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-18 09:55:57,873 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 09:55:59,891 - INFO - Cycle complete. README updated.
+2026-06-18 09:57:56,264 - INFO - Starting fetch cycle
+2026-06-18 09:57:56,264 - INFO - Logging in to TradingView with credentials
+2026-06-18 09:58:12,088 - WARNING - [NIFTY50] no data returned
+2026-06-18 09:58:14,362 - INFO - [BANKNIFTY] fetched 375 rows
+2026-06-18 09:58:14,423 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 09:58:16,637 - INFO - [SENSEX] fetched 375 rows
+2026-06-18 09:58:16,665 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 09:58:18,885 - INFO - [MIDCAPNIFTY] fetched 375 rows
+2026-06-18 09:58:18,918 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 09:58:21,129 - INFO - [FINNIFTY] fetched 375 rows
+2026-06-18 09:58:21,166 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 09:58:23,365 - INFO - [NIFTY1!] fetched 375 rows
+2026-06-18 09:58:23,402 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 09:58:25,664 - INFO - [BANKNIFTY1!] fetched 375 rows
+2026-06-18 09:58:25,703 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 09:58:43,286 - WARNING - [SENSEX1!] no data returned
+2026-06-18 09:58:45,489 - INFO - [MIDCPNIFTY1!] fetched 375 rows
+2026-06-18 09:58:45,559 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 09:58:47,784 - INFO - [FINNIFTY1!] fetched 375 rows
+2026-06-18 09:58:47,829 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 09:58:49,857 - INFO - Cycle complete. README updated.
+2026-06-18 10:01:56,670 - INFO - Starting fetch cycle
+2026-06-18 10:01:56,672 - INFO - TradingView session token injected
+2026-06-18 10:02:00,494 - WARNING - [NIFTY50] no data returned
+2026-06-18 10:02:06,295 - WARNING - [BANKNIFTY] no data returned
+2026-06-18 10:02:11,967 - WARNING - [SENSEX] no data returned
+2026-06-18 10:02:17,521 - WARNING - [MIDCAPNIFTY] no data returned
+2026-06-18 10:02:23,222 - WARNING - [FINNIFTY] no data returned
+2026-06-18 10:02:28,790 - WARNING - [NIFTY1!] no data returned
+2026-06-18 10:02:34,441 - WARNING - [BANKNIFTY1!] no data returned
+2026-06-18 10:02:40,096 - WARNING - [SENSEX1!] no data returned
+2026-06-18 10:02:45,831 - WARNING - [MIDCPNIFTY1!] no data returned
+2026-06-18 10:02:51,632 - WARNING - [FINNIFTY1!] no data returned
+2026-06-18 10:02:53,680 - INFO - Cycle complete. README updated.
+2026-06-18 10:07:49,224 - INFO - Starting fetch cycle
+2026-06-18 10:07:49,225 - INFO - TradingView session token injected
+2026-06-18 10:07:53,095 - WARNING - [NIFTY50] no data returned
+2026-06-18 10:07:58,631 - WARNING - [BANKNIFTY] no data returned
+2026-06-18 10:08:04,171 - WARNING - [SENSEX] no data returned
+2026-06-18 10:08:09,925 - WARNING - [MIDCAPNIFTY] no data returned
+2026-06-18 10:08:15,474 - WARNING - [FINNIFTY] no data returned
+2026-06-18 10:08:21,047 - WARNING - [NIFTY1!] no data returned
+2026-06-18 10:08:26,564 - WARNING - [BANKNIFTY1!] no data returned
+2026-06-18 10:08:32,146 - WARNING - [SENSEX1!] no data returned
+2026-06-18 10:08:37,697 - WARNING - [MIDCPNIFTY1!] no data returned
+2026-06-18 10:08:43,242 - WARNING - [FINNIFTY1!] no data returned
+2026-06-18 10:08:45,296 - INFO - Cycle complete. README updated.
+2026-06-18 10:25:16,989 - INFO - Starting fetch cycle
+2026-06-18 10:25:16,990 - INFO - TradingView session token injected
+2026-06-18 10:25:18,352 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:25:18,353 - WARNING - [NIFTY1!] No yfinance mapping found
+2026-06-18 10:25:18,354 - WARNING - [NIFTY1!] No data from any source
+2026-06-18 10:25:21,618 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:25:21,620 - WARNING - [BANKNIFTY1!] No yfinance mapping found
+2026-06-18 10:25:21,621 - WARNING - [BANKNIFTY1!] No data from any source
+2026-06-18 10:25:24,893 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:25:24,893 - WARNING - [MIDCPNIFTY1!] No yfinance mapping found
+2026-06-18 10:25:24,894 - WARNING - [MIDCPNIFTY1!] No data from any source
+2026-06-18 10:25:28,177 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:25:28,177 - WARNING - [FINNIFTY1!] No yfinance mapping found
+2026-06-18 10:25:28,178 - WARNING - [FINNIFTY1!] No data from any source
+2026-06-18 10:25:31,460 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:25:32,190 - ERROR - [NIFTY50] yfinance fetch failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in fetch_yf
+    df.columns = [c.lower() for c in df.columns]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in <listcomp>
+    df.columns = [c.lower() for c in df.columns]
+                  ^^^^^^^
+AttributeError: 'tuple' object has no attribute 'lower'
+2026-06-18 10:25:32,192 - WARNING - [NIFTY50] No data from any source
+2026-06-18 10:25:35,508 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:25:36,074 - ERROR - [BANKNIFTY] yfinance fetch failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in fetch_yf
+    df.columns = [c.lower() for c in df.columns]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in <listcomp>
+    df.columns = [c.lower() for c in df.columns]
+                  ^^^^^^^
+AttributeError: 'tuple' object has no attribute 'lower'
+2026-06-18 10:25:36,076 - WARNING - [BANKNIFTY] No data from any source
+2026-06-18 10:25:39,345 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:25:39,544 - ERROR - [SENSEX] yfinance fetch failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in fetch_yf
+    df.columns = [c.lower() for c in df.columns]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in <listcomp>
+    df.columns = [c.lower() for c in df.columns]
+                  ^^^^^^^
+AttributeError: 'tuple' object has no attribute 'lower'
+2026-06-18 10:25:39,545 - WARNING - [SENSEX] No data from any source
+2026-06-18 10:25:42,828 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:25:43,060 - ERROR - [MIDCAPNIFTY] yfinance fetch failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in fetch_yf
+    df.columns = [c.lower() for c in df.columns]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in <listcomp>
+    df.columns = [c.lower() for c in df.columns]
+                  ^^^^^^^
+AttributeError: 'tuple' object has no attribute 'lower'
+2026-06-18 10:25:43,061 - WARNING - [MIDCAPNIFTY] No data from any source
+2026-06-18 10:25:46,363 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:25:46,528 - ERROR - [FINNIFTY] yfinance fetch failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in fetch_yf
+    df.columns = [c.lower() for c in df.columns]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 184, in <listcomp>
+    df.columns = [c.lower() for c in df.columns]
+                  ^^^^^^^
+AttributeError: 'tuple' object has no attribute 'lower'
+2026-06-18 10:25:46,530 - WARNING - [FINNIFTY] No data from any source
+2026-06-18 10:25:48,601 - INFO - Cycle complete. README updated.
+2026-06-18 10:26:41,092 - INFO - Starting fetch cycle
+2026-06-18 10:26:41,093 - INFO - TradingView session token injected
+2026-06-18 10:26:42,872 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:26:42,873 - WARNING - [NIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:26:42,874 - WARNING - [NIFTY1!] No data from any source
+2026-06-18 10:26:46,788 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:26:46,789 - WARNING - [BANKNIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:26:46,791 - WARNING - [BANKNIFTY1!] No data from any source
+2026-06-18 10:26:50,082 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:26:50,082 - WARNING - [MIDCPNIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:26:50,083 - WARNING - [MIDCPNIFTY1!] No data from any source
+2026-06-18 10:26:53,401 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:26:53,402 - WARNING - [FINNIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:26:53,404 - WARNING - [FINNIFTY1!] No data from any source
+2026-06-18 10:26:56,716 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:26:57,606 - INFO - [NIFTY50] yfinance fetched 72 rows
+2026-06-18 10:26:57,660 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:27:00,977 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:27:01,167 - INFO - [BANKNIFTY] yfinance fetched 72 rows
+2026-06-18 10:27:01,217 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:27:04,641 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:27:04,815 - INFO - [SENSEX] yfinance fetched 58 rows
+2026-06-18 10:27:04,860 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:27:08,158 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:27:08,450 - INFO - [MIDCAPNIFTY] yfinance fetched 73 rows
+2026-06-18 10:27:08,500 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:27:11,932 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:27:12,456 - INFO - [FINNIFTY] yfinance fetched 73 rows
+2026-06-18 10:27:12,519 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:27:14,606 - INFO - Cycle complete. README updated.
+2026-06-18 10:27:48,148 - INFO - Starting fetch cycle
+2026-06-18 10:27:48,148 - INFO - TradingView session token injected
+2026-06-18 10:27:50,024 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:27:50,025 - WARNING - [NIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:27:50,025 - WARNING - [NIFTY1!] No data from any source
+2026-06-18 10:27:53,558 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:27:53,559 - WARNING - [BANKNIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:27:53,559 - WARNING - [BANKNIFTY1!] No data from any source
+2026-06-18 10:27:56,866 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:27:56,866 - WARNING - [MIDCPNIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:27:56,866 - WARNING - [MIDCPNIFTY1!] No data from any source
+2026-06-18 10:28:00,149 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:28:00,149 - WARNING - [FINNIFTY1!] No yfinance mapping, skipping fallback
+2026-06-18 10:28:00,165 - WARNING - [FINNIFTY1!] No data from any source
+2026-06-18 10:28:03,452 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:28:04,109 - INFO - [NIFTY50] yfinance fetched 74 rows
+2026-06-18 10:28:04,170 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:28:07,602 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:28:07,804 - INFO - [BANKNIFTY] yfinance fetched 74 rows
+2026-06-18 10:28:07,877 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:28:11,163 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:28:11,305 - INFO - [SENSEX] yfinance fetched 59 rows
+2026-06-18 10:28:11,364 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:28:14,987 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:28:15,278 - INFO - [MIDCAPNIFTY] yfinance fetched 74 rows
+2026-06-18 10:28:15,342 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:28:19,152 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:28:19,531 - INFO - [FINNIFTY] yfinance fetched 74 rows
+2026-06-18 10:28:19,582 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:28:21,637 - INFO - Cycle complete. README updated.
+2026-06-18 10:37:37,810 - INFO - Starting fetch cycle
+2026-06-18 10:37:37,810 - INFO - TradingView session token injected
+2026-06-18 10:37:40,767 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:37:41,565 - INFO - [NIFTY1!] yfinance fetched 83 rows
+2026-06-18 10:37:41,601 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 10:37:46,747 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:37:47,118 - INFO - [BANKNIFTY1!] yfinance fetched 83 rows
+2026-06-18 10:37:47,194 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 10:37:51,917 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 10:37:52,269 - INFO - [SENSEX1!] yfinance fetched 68 rows
+2026-06-18 10:37:52,328 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 10:37:55,705 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:37:55,882 - INFO - [MIDCPNIFTY1!] yfinance fetched 83 rows
+2026-06-18 10:37:55,951 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 10:37:59,366 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:37:59,579 - INFO - [FINNIFTY1!] yfinance fetched 83 rows
+2026-06-18 10:37:59,729 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 10:38:03,133 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:38:03,419 - INFO - [NIFTY50] yfinance fetched 84 rows
+2026-06-18 10:38:03,470 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:38:10,319 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:38:10,668 - INFO - [BANKNIFTY] yfinance fetched 84 rows
+2026-06-18 10:38:42,379 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:38:46,213 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:38:46,575 - INFO - [SENSEX] yfinance fetched 69 rows
+2026-06-18 10:38:46,774 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:38:50,693 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:38:50,928 - INFO - [MIDCAPNIFTY] yfinance fetched 84 rows
+2026-06-18 10:38:50,979 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:38:54,562 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:38:54,729 - INFO - [FINNIFTY] yfinance fetched 84 rows
+2026-06-18 10:38:54,801 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:38:56,827 - INFO - Cycle complete. README updated.
+2026-06-18 10:46:55,453 - INFO - Starting fetch cycle
+2026-06-18 10:46:55,455 - INFO - TradingView session token injected
+2026-06-18 10:46:57,094 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:46:57,672 - INFO - [NIFTY1!] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:46:57,675 - INFO - [NIFTY1!] yfinance fetched 92 rows
+2026-06-18 10:46:57,711 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 10:47:01,532 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:47:01,981 - INFO - [BANKNIFTY1!] ETF volume merged from BANKBEES.NS
+2026-06-18 10:47:01,983 - INFO - [BANKNIFTY1!] yfinance fetched 93 rows
+2026-06-18 10:47:02,012 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 10:47:06,179 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 10:47:06,603 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:47:06,613 - INFO - [SENSEX1!] yfinance fetched 78 rows
+2026-06-18 10:47:06,669 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 10:47:10,232 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:47:10,547 - INFO - [MIDCPNIFTY1!] ETF volume merged from MID150BEES.NS
+2026-06-18 10:47:10,547 - INFO - [MIDCPNIFTY1!] yfinance fetched 93 rows
+2026-06-18 10:47:10,581 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 10:47:14,148 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:47:14,429 - INFO - [FINNIFTY1!] ETF volume merged from FINIETF.NS
+2026-06-18 10:47:14,433 - INFO - [FINNIFTY1!] yfinance fetched 93 rows
+2026-06-18 10:47:14,463 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 10:47:18,270 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:47:18,629 - INFO - [NIFTY50] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:47:18,633 - INFO - [NIFTY50] yfinance fetched 93 rows
+2026-06-18 10:47:18,687 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:47:22,235 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:47:22,632 - INFO - [BANKNIFTY] ETF volume merged from BANKBEES.NS
+2026-06-18 10:47:22,632 - INFO - [BANKNIFTY] yfinance fetched 93 rows
+2026-06-18 10:47:22,669 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:47:26,587 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:47:27,098 - INFO - [SENSEX] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:47:27,101 - INFO - [SENSEX] yfinance fetched 78 rows
+2026-06-18 10:47:27,157 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:47:30,873 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:47:31,234 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 10:47:31,234 - INFO - [MIDCAPNIFTY] yfinance fetched 93 rows
+2026-06-18 10:47:31,288 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:47:35,756 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:47:36,277 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 10:47:36,280 - INFO - [FINNIFTY] yfinance fetched 93 rows
+2026-06-18 10:47:36,311 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:47:38,364 - INFO - Cycle complete. README updated.
+2026-06-18 10:52:08,983 - INFO - Starting fetch cycle
+2026-06-18 10:52:08,984 - INFO - TradingView session token injected
+2026-06-18 10:52:10,975 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:52:11,691 - INFO - [NIFTY1!] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:52:11,694 - INFO - [NIFTY1!] yfinance fetched 98 rows
+2026-06-18 10:52:11,734 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 10:52:15,251 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:52:15,470 - INFO - [BANKNIFTY1!] ETF volume merged from BANKBEES.NS
+2026-06-18 10:52:15,472 - INFO - [BANKNIFTY1!] yfinance fetched 98 rows
+2026-06-18 10:52:15,497 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 10:52:19,222 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 10:52:19,454 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:52:19,457 - INFO - [SENSEX1!] yfinance fetched 83 rows
+2026-06-18 10:52:19,485 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 10:52:23,025 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:52:23,312 - INFO - [MIDCPNIFTY1!] ETF volume merged from MID150BEES.NS
+2026-06-18 10:52:23,315 - INFO - [MIDCPNIFTY1!] yfinance fetched 98 rows
+2026-06-18 10:52:23,370 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 10:52:27,149 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:52:27,426 - INFO - [FINNIFTY1!] ETF volume merged from FINIETF.NS
+2026-06-18 10:52:27,430 - INFO - [FINNIFTY1!] yfinance fetched 98 rows
+2026-06-18 10:52:27,466 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 10:52:31,081 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:52:31,353 - INFO - [NIFTY50] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:52:31,355 - INFO - [NIFTY50] yfinance fetched 98 rows
+2026-06-18 10:52:31,424 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:52:34,996 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:52:35,236 - INFO - [BANKNIFTY] ETF volume merged from BANKBEES.NS
+2026-06-18 10:52:35,239 - INFO - [BANKNIFTY] yfinance fetched 98 rows
+2026-06-18 10:52:35,303 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:52:39,221 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:52:39,431 - INFO - [SENSEX] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:52:39,433 - INFO - [SENSEX] yfinance fetched 83 rows
+2026-06-18 10:52:39,484 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:52:43,133 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:52:43,339 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 10:52:43,341 - INFO - [MIDCAPNIFTY] yfinance fetched 98 rows
+2026-06-18 10:52:43,395 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:52:46,961 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:52:47,274 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 10:52:47,277 - INFO - [FINNIFTY] yfinance fetched 98 rows
+2026-06-18 10:52:47,386 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:52:49,684 - INFO - Cycle complete. README updated.
+2026-06-18 10:53:04,727 - INFO - Starting fetch cycle
+2026-06-18 10:53:04,728 - INFO - TradingView session token injected
+2026-06-18 10:53:06,528 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:53:07,318 - INFO - [NIFTY1!] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:53:07,321 - INFO - [NIFTY1!] yfinance fetched 99 rows
+2026-06-18 10:53:07,370 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 10:53:10,540 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:53:11,267 - INFO - [BANKNIFTY1!] ETF volume merged from BANKBEES.NS
+2026-06-18 10:53:11,269 - INFO - [BANKNIFTY1!] yfinance fetched 99 rows
+2026-06-18 10:53:11,313 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 10:53:14,598 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 10:53:15,029 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:53:15,032 - INFO - [SENSEX1!] yfinance fetched 84 rows
+2026-06-18 10:53:15,060 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 10:53:18,373 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:53:19,292 - INFO - [MIDCPNIFTY1!] ETF volume merged from MID150BEES.NS
+2026-06-18 10:53:19,294 - INFO - [MIDCPNIFTY1!] yfinance fetched 99 rows
+2026-06-18 10:53:19,329 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 10:53:22,706 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:53:23,819 - INFO - [FINNIFTY1!] ETF volume merged from FINIETF.NS
+2026-06-18 10:53:23,821 - INFO - [FINNIFTY1!] yfinance fetched 99 rows
+2026-06-18 10:53:23,859 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 10:53:27,276 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:53:28,355 - INFO - [NIFTY50] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:53:28,357 - INFO - [NIFTY50] yfinance fetched 99 rows
+2026-06-18 10:53:28,827 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:53:32,614 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:53:33,749 - INFO - [BANKNIFTY] ETF volume merged from BANKBEES.NS
+2026-06-18 10:53:33,751 - INFO - [BANKNIFTY] yfinance fetched 99 rows
+2026-06-18 10:53:33,777 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:53:37,090 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:53:38,126 - INFO - [SENSEX] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:53:38,128 - INFO - [SENSEX] yfinance fetched 84 rows
+2026-06-18 10:53:38,157 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:53:41,495 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:53:42,358 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 10:53:42,360 - INFO - [MIDCAPNIFTY] yfinance fetched 99 rows
+2026-06-18 10:53:42,397 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:53:45,787 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:53:46,761 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 10:53:46,763 - INFO - [FINNIFTY] yfinance fetched 99 rows
+2026-06-18 10:53:46,790 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:53:49,063 - INFO - Cycle complete. README updated.
+2026-06-18 10:55:38,470 - INFO - Starting fetch cycle
+2026-06-18 10:55:38,471 - INFO - TradingView session token injected
+2026-06-18 10:55:39,860 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:55:40,947 - INFO - [NIFTY1!] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:55:40,957 - INFO - [NIFTY1!] yfinance fetched 101 rows
+2026-06-18 10:55:41,031 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 10:55:44,299 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:55:44,545 - INFO - [BANKNIFTY1!] ETF volume merged from BANKBEES.NS
+2026-06-18 10:55:44,546 - INFO - [BANKNIFTY1!] yfinance fetched 101 rows
+2026-06-18 10:55:44,580 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 10:55:47,888 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 10:55:48,293 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:55:48,295 - INFO - [SENSEX1!] yfinance fetched 86 rows
+2026-06-18 10:55:48,344 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 10:55:51,617 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:55:51,929 - INFO - [MIDCPNIFTY1!] ETF volume merged from MID150BEES.NS
+2026-06-18 10:55:51,931 - INFO - [MIDCPNIFTY1!] yfinance fetched 101 rows
+2026-06-18 10:55:51,981 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 10:55:55,232 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:55:55,623 - INFO - [FINNIFTY1!] ETF volume merged from FINIETF.NS
+2026-06-18 10:55:55,625 - INFO - [FINNIFTY1!] yfinance fetched 101 rows
+2026-06-18 10:55:55,658 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 10:55:58,919 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:55:59,158 - INFO - [NIFTY50] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:55:59,160 - INFO - [NIFTY50] yfinance fetched 101 rows
+2026-06-18 10:55:59,201 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:56:02,490 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:56:03,661 - INFO - [BANKNIFTY] ETF volume merged from BANKBEES.NS
+2026-06-18 10:56:03,663 - INFO - [BANKNIFTY] yfinance fetched 102 rows
+2026-06-18 10:56:03,695 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:56:07,015 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:56:07,982 - INFO - [SENSEX] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:56:07,985 - INFO - [SENSEX] yfinance fetched 87 rows
+2026-06-18 10:56:08,037 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:56:11,444 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:56:11,814 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 10:56:11,816 - INFO - [MIDCAPNIFTY] yfinance fetched 102 rows
+2026-06-18 10:56:11,863 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:56:15,183 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:56:15,547 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 10:56:15,549 - INFO - [FINNIFTY] yfinance fetched 102 rows
+2026-06-18 10:56:15,600 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:56:17,664 - INFO - Cycle complete. README updated.
+2026-06-18 10:57:06,282 - INFO - Starting fetch cycle
+2026-06-18 10:57:06,283 - INFO - TradingView session token injected
+2026-06-18 10:57:09,918 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 10:57:11,181 - INFO - [NIFTY1!] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:57:11,184 - INFO - [NIFTY1!] yfinance fetched 103 rows
+2026-06-18 10:57:11,236 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 10:57:16,785 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 10:57:17,096 - INFO - [BANKNIFTY1!] ETF volume merged from BANKBEES.NS
+2026-06-18 10:57:17,098 - INFO - [BANKNIFTY1!] yfinance fetched 103 rows
+2026-06-18 10:57:17,134 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 10:57:22,655 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 10:57:23,072 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:57:23,074 - INFO - [SENSEX1!] yfinance fetched 88 rows
+2026-06-18 10:57:23,112 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 10:57:29,517 - INFO - [MIDCPNIFTY1!] Falling back to yfinance
+2026-06-18 10:57:29,882 - INFO - [MIDCPNIFTY1!] ETF volume merged from MID150BEES.NS
+2026-06-18 10:57:29,885 - INFO - [MIDCPNIFTY1!] yfinance fetched 103 rows
+2026-06-18 10:57:29,952 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 10:57:35,567 - INFO - [FINNIFTY1!] Falling back to yfinance
+2026-06-18 10:57:36,049 - INFO - [FINNIFTY1!] ETF volume merged from FINIETF.NS
+2026-06-18 10:57:36,050 - INFO - [FINNIFTY1!] yfinance fetched 103 rows
+2026-06-18 10:57:36,102 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 10:57:41,836 - INFO - [NIFTY50] Falling back to yfinance
+2026-06-18 10:57:42,186 - INFO - [NIFTY50] ETF volume merged from NIFTYBEES.NS
+2026-06-18 10:57:42,192 - INFO - [NIFTY50] yfinance fetched 103 rows
+2026-06-18 10:57:42,254 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 10:57:47,797 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 10:57:48,230 - INFO - [BANKNIFTY] ETF volume merged from BANKBEES.NS
+2026-06-18 10:57:48,231 - INFO - [BANKNIFTY] yfinance fetched 103 rows
+2026-06-18 10:57:48,300 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 10:57:53,739 - INFO - [SENSEX] Falling back to yfinance
+2026-06-18 10:57:54,215 - INFO - [SENSEX] ETF volume merged from SENSEXETF.NS
+2026-06-18 10:57:54,217 - INFO - [SENSEX] yfinance fetched 88 rows
+2026-06-18 10:57:54,286 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 10:57:59,801 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 10:58:00,252 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 10:58:00,254 - INFO - [MIDCAPNIFTY] yfinance fetched 103 rows
+2026-06-18 10:58:00,311 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 10:58:05,854 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 10:58:06,334 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 10:58:06,336 - INFO - [FINNIFTY] yfinance fetched 104 rows
+2026-06-18 10:58:06,377 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 10:58:08,435 - INFO - Cycle complete. README updated.
+2026-06-18 11:00:44,535 - INFO - Starting fetch cycle
+2026-06-18 11:00:44,812 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 11:00:44,831 - ERROR - [NIFTY1!] Futures processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 339, in main
+    insert_data("futures", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:00:47,291 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 11:00:47,313 - ERROR - [BANKNIFTY1!] Futures processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 339, in main
+    insert_data("futures", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:01:04,896 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 11:01:06,244 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 11:01:06,246 - INFO - [SENSEX1!] yfinance fetched 92 rows
+2026-06-18 11:01:06,279 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 11:01:08,528 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 11:01:08,545 - ERROR - [MIDCPNIFTY1!] Futures processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 339, in main
+    insert_data("futures", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:01:10,749 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 11:01:10,761 - ERROR - [FINNIFTY1!] Futures processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 339, in main
+    insert_data("futures", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:01:12,953 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 11:01:12,966 - ERROR - [NIFTY50] Index processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 350, in main
+    insert_data("indexes", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:01:15,183 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 11:01:15,197 - ERROR - [BANKNIFTY] Index processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 350, in main
+    insert_data("indexes", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:01:17,405 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 11:01:17,419 - ERROR - [SENSEX] Index processing failed
+Traceback (most recent call last):
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 350, in main
+    insert_data("indexes", symbol, df)
+  File "c:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 133, in insert_data
+    df["datetime"] = pd.to_datetime(df["datetime"]).dt.tz_convert(IST).dt.strftime("%Y-%m-%d %H:%M")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\accessor.py", line 112, in f
+    return self._delegate_method(name, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\accessors.py", line 132, in _delegate_method
+    result = method(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\datetimes.py", line 283, in tz_convert
+    arr = self._data.tz_convert(tz)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\pandas\core\arrays\datetimes.py", line 915, in tz_convert
+    raise TypeError(
+TypeError: Cannot convert tz-naive timestamps, use tz_localize to localize
+2026-06-18 11:01:34,972 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 11:01:35,550 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 11:01:35,556 - INFO - [MIDCAPNIFTY] yfinance fetched 107 rows
+2026-06-18 11:01:35,600 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 11:01:53,246 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 11:01:53,642 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 11:01:53,643 - INFO - [FINNIFTY] yfinance fetched 107 rows
+2026-06-18 11:01:53,683 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 11:01:55,746 - INFO - Cycle complete. README updated.
+2026-06-18 11:02:31,970 - INFO - Starting fetch cycle
+2026-06-18 11:02:32,248 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 11:02:32,335 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 11:02:34,569 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 11:02:34,616 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 11:02:52,183 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 11:02:53,068 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 11:02:53,070 - INFO - [SENSEX1!] yfinance fetched 93 rows
+2026-06-18 11:02:53,100 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 11:02:55,758 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 11:02:55,809 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 11:02:58,334 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 11:02:58,375 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 11:03:00,923 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 11:03:00,963 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 11:03:03,475 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 11:03:03,515 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 11:03:06,021 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 11:03:06,061 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 11:03:24,273 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 11:03:25,935 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 11:03:25,937 - INFO - [MIDCAPNIFTY] yfinance fetched 109 rows
+2026-06-18 11:03:25,956 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 11:03:44,165 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 11:03:45,924 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 11:03:45,926 - INFO - [FINNIFTY] yfinance fetched 109 rows
+2026-06-18 11:03:45,962 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 11:03:47,980 - INFO - Cycle complete. README updated.
+2026-06-18 11:07:09,690 - INFO - Starting fetch cycle
+2026-06-18 11:07:10,540 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 11:07:10,585 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 11:07:13,152 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 11:07:13,193 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 11:07:31,427 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 11:07:32,049 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 11:07:32,051 - INFO - [SENSEX1!] yfinance fetched 98 rows
+2026-06-18 11:07:32,089 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 11:07:35,126 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 11:07:35,203 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 11:07:37,756 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 11:07:37,828 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 11:07:40,376 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 11:07:40,449 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 11:07:43,244 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 11:07:43,322 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 11:07:45,858 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 11:07:45,933 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 11:08:04,233 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 11:08:04,612 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 11:08:04,615 - INFO - [MIDCAPNIFTY] yfinance fetched 114 rows
+2026-06-18 11:08:04,665 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 11:08:23,185 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 11:08:23,579 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 11:08:23,581 - INFO - [FINNIFTY] yfinance fetched 114 rows
+2026-06-18 11:08:23,614 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 11:08:25,641 - INFO - Cycle complete. README updated.
+2026-06-18 11:13:38,445 - INFO - Starting fetch cycle
+2026-06-18 11:13:38,759 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 11:13:38,821 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 11:13:41,058 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 11:13:41,098 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 11:13:58,699 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 11:13:59,769 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 11:13:59,773 - INFO - [SENSEX1!] yfinance fetched 104 rows
+2026-06-18 11:14:00,527 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 11:14:02,756 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 11:14:02,815 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 11:14:05,038 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 11:14:05,094 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 11:14:07,317 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 11:14:07,379 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 11:14:09,590 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 11:14:09,659 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 11:14:11,877 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 11:14:11,956 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 11:14:29,518 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 11:14:29,778 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 11:14:29,780 - INFO - [MIDCAPNIFTY] yfinance fetched 120 rows
+2026-06-18 11:14:29,823 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 11:14:48,306 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 11:14:48,527 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 11:14:48,529 - INFO - [FINNIFTY] yfinance fetched 120 rows
+2026-06-18 11:14:48,576 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 11:14:50,600 - INFO - Cycle complete. README updated.
+2026-06-18 11:15:02,839 - INFO - Starting fetch cycle
+2026-06-18 11:15:07,427 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 11:15:07,492 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 11:15:10,994 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 11:15:11,068 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 11:15:31,317 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 11:15:32,920 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 11:15:32,922 - INFO - [SENSEX1!] yfinance fetched 106 rows
+2026-06-18 11:15:32,990 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 11:15:36,430 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 11:15:36,492 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 11:15:39,934 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 11:15:40,018 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 11:15:43,448 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 11:15:43,490 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 11:15:46,994 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 11:15:47,171 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 11:15:50,612 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 11:15:50,704 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 11:16:10,946 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 11:16:11,742 - INFO - [MIDCAPNIFTY] ETF volume merged from MID150BEES.NS
+2026-06-18 11:16:11,744 - INFO - [MIDCAPNIFTY] yfinance fetched 122 rows
+2026-06-18 11:16:11,783 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 11:16:31,955 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 11:16:32,441 - INFO - [FINNIFTY] ETF volume merged from FINIETF.NS
+2026-06-18 11:16:32,442 - INFO - [FINNIFTY] yfinance fetched 122 rows
+2026-06-18 11:16:32,492 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 11:16:34,538 - INFO - Cycle complete. README updated.
+2026-06-18 12:49:35,374 - INFO - Starting fetch cycle
+2026-06-18 12:49:35,818 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 12:49:35,880 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 12:49:38,097 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 12:49:38,140 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 12:49:55,657 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 12:49:56,506 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 12:49:56,508 - INFO - [SENSEX1!] yfinance fetched 200 rows
+2026-06-18 12:49:56,537 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 12:49:58,748 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 12:49:58,816 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 12:50:01,096 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 12:50:01,138 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 12:50:03,358 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 12:50:03,429 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 12:50:05,647 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 12:50:05,708 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 12:50:07,918 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 12:50:07,955 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 12:50:25,450 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 12:50:25,935 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 12:50:25,936 - INFO - [MIDCAPNIFTY] yfinance fetched 216 rows
+2026-06-18 12:50:26,003 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 12:50:43,883 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 12:50:44,452 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 12:50:44,454 - INFO - [FINNIFTY] yfinance fetched 216 rows
+2026-06-18 12:50:44,520 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 12:50:46,581 - INFO - Cycle complete. README updated.
+2026-06-18 13:03:05,991 - INFO - Starting fetch cycle
+2026-06-18 13:03:06,393 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:03:08,740 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:03:26,307 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:03:27,133 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:03:27,135 - INFO - [SENSEX1!] yfinance fetched 214 rows
+2026-06-18 13:03:29,368 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:03:31,648 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:03:33,899 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:03:36,163 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:03:38,442 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:03:56,023 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:03:56,440 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:03:56,442 - INFO - [MIDCAPNIFTY] yfinance fetched 229 rows
+2026-06-18 13:04:14,315 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:04:14,563 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:04:14,565 - INFO - [FINNIFTY] yfinance fetched 230 rows
+2026-06-18 13:04:16,652 - INFO - Cycle complete. README updated.
+2026-06-18 13:04:58,214 - INFO - Starting fetch cycle
+2026-06-18 13:04:58,783 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:04:58,816 - INFO - [NIFTY1!] Stored latest candle @ 2026-06-18 13:04
+2026-06-18 13:05:01,538 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:05:01,565 - INFO - [BANKNIFTY1!] Stored latest candle @ 2026-06-18 13:04
+2026-06-18 13:05:20,063 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:05:20,701 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:05:20,704 - INFO - [SENSEX1!] yfinance fetched 216 rows
+2026-06-18 13:05:20,754 - INFO - [SENSEX1!] Stored latest candle @ 2026-06-18 12:50
+2026-06-18 13:05:23,296 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:05:23,326 - INFO - [MIDCPNIFTY1!] Stored latest candle @ 2026-06-18 13:01
+2026-06-18 13:05:25,970 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:05:26,020 - INFO - [FINNIFTY1!] Stored latest candle @ 2026-06-18 12:33
+2026-06-18 13:05:28,582 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:05:28,609 - INFO - [NIFTY50] Stored latest candle @ 2026-06-18 13:05
+2026-06-18 13:05:31,219 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:05:31,245 - INFO - [BANKNIFTY] Stored latest candle @ 2026-06-18 13:05
+2026-06-18 13:05:33,782 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:05:33,817 - INFO - [SENSEX] Stored latest candle @ 2026-06-18 12:50
+2026-06-18 13:05:52,048 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:05:52,386 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:05:52,388 - INFO - [MIDCAPNIFTY] yfinance fetched 231 rows
+2026-06-18 13:05:52,446 - INFO - [MIDCAPNIFTY] Stored latest candle @ 2026-06-18 13:05
+2026-06-18 13:06:10,570 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:06:10,861 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:06:10,863 - INFO - [FINNIFTY] yfinance fetched 232 rows
+2026-06-18 13:06:10,887 - INFO - [FINNIFTY] Stored latest candle @ 2026-06-18 13:06
+2026-06-18 13:06:12,904 - INFO - Cycle complete. README updated.
+2026-06-18 13:06:45,596 - INFO - Starting fetch cycle
+2026-06-18 13:06:46,220 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:06:46,280 - INFO - [NIFTY1!] Stored latest candle @ 2026-06-18 13:06
+2026-06-18 13:06:48,834 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:06:48,888 - INFO - [BANKNIFTY1!] Stored latest candle @ 2026-06-18 13:06
+2026-06-18 13:07:11,388 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:07:12,272 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:07:12,273 - INFO - [SENSEX1!] yfinance fetched 218 rows
+2026-06-18 13:07:12,323 - INFO - [SENSEX1!] Stored latest candle @ 2026-06-18 12:52
+2026-06-18 13:07:14,907 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:07:14,931 - INFO - [MIDCPNIFTY1!] Stored latest candle @ 2026-06-18 13:01
+2026-06-18 13:07:17,721 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:07:17,771 - INFO - [FINNIFTY1!] Stored latest candle @ 2026-06-18 12:33
+2026-06-18 13:07:20,322 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:07:20,373 - INFO - [NIFTY50] Stored latest candle @ 2026-06-18 13:07
+2026-06-18 13:07:22,978 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:07:23,002 - INFO - [BANKNIFTY] Stored latest candle @ 2026-06-18 13:07
+2026-06-18 13:07:25,510 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:07:25,564 - INFO - [SENSEX] Stored latest candle @ 2026-06-18 12:52
+2026-06-18 13:07:52,793 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:07:53,275 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:07:53,277 - INFO - [MIDCAPNIFTY] yfinance fetched 233 rows
+2026-06-18 13:07:53,296 - INFO - [MIDCAPNIFTY] Stored latest candle @ 2026-06-18 13:07
+2026-06-18 13:08:10,869 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:08:11,257 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:08:11,258 - INFO - [FINNIFTY] yfinance fetched 234 rows
+2026-06-18 13:08:11,308 - INFO - [FINNIFTY] Stored latest candle @ 2026-06-18 13:08
+2026-06-18 13:08:13,325 - INFO - Cycle complete. README updated.
+2026-06-18 13:08:42,488 - INFO - Starting fetch cycle
+2026-06-18 13:08:42,708 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:08:42,751 - INFO - [NIFTY1!] Stored latest candle @ 2026-06-18 13:08
+2026-06-18 13:08:44,971 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:08:45,019 - INFO - [BANKNIFTY1!] Stored latest candle @ 2026-06-18 13:08
+2026-06-18 13:09:03,462 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:09:04,610 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:09:04,612 - INFO - [SENSEX1!] yfinance fetched 220 rows
+2026-06-18 13:09:04,634 - INFO - [SENSEX1!] Stored latest candle @ 2026-06-18 12:54
+2026-06-18 13:09:08,334 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:09:08,359 - INFO - [MIDCPNIFTY1!] Stored latest candle @ 2026-06-18 13:01
+2026-06-18 13:09:11,778 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:09:11,801 - INFO - [FINNIFTY1!] Stored latest candle @ 2026-06-18 12:33
+2026-06-18 13:09:15,210 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:09:15,269 - INFO - [NIFTY50] Stored latest candle @ 2026-06-18 13:09
+2026-06-18 13:09:18,791 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:09:18,846 - INFO - [BANKNIFTY] Stored latest candle @ 2026-06-18 13:09
+2026-06-18 13:09:22,275 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:09:22,327 - INFO - [SENSEX] Stored latest candle @ 2026-06-18 12:54
+2026-06-18 13:09:42,622 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:09:42,999 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:09:43,002 - INFO - [MIDCAPNIFTY] yfinance fetched 235 rows
+2026-06-18 13:09:43,046 - INFO - [MIDCAPNIFTY] Stored latest candle @ 2026-06-18 13:09
+2026-06-18 13:10:03,824 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:10:04,191 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:10:04,193 - INFO - [FINNIFTY] yfinance fetched 236 rows
+2026-06-18 13:10:04,215 - INFO - [FINNIFTY] Stored latest candle @ 2026-06-18 13:10
+2026-06-18 13:10:06,243 - INFO - Cycle complete. README updated.
+2026-06-18 13:12:31,638 - INFO - Starting fetch cycle
+2026-06-18 13:12:31,967 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:12:32,035 - INFO - [NIFTY1!] Inserted into futures
+2026-06-18 13:12:34,246 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:12:34,311 - INFO - [BANKNIFTY1!] Inserted into futures
+2026-06-18 13:12:51,910 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:12:52,649 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:12:52,651 - INFO - [SENSEX1!] yfinance fetched 223 rows
+2026-06-18 13:12:52,730 - INFO - [SENSEX1!] Inserted into futures
+2026-06-18 13:12:54,988 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:12:55,051 - INFO - [MIDCPNIFTY1!] Inserted into futures
+2026-06-18 13:12:57,372 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:12:57,421 - INFO - [FINNIFTY1!] Inserted into futures
+2026-06-18 13:12:59,739 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:12:59,817 - INFO - [NIFTY50] Inserted into indexes
+2026-06-18 13:13:02,447 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:13:02,512 - INFO - [BANKNIFTY] Inserted into indexes
+2026-06-18 13:13:04,802 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:13:04,888 - INFO - [SENSEX] Inserted into indexes
+2026-06-18 13:13:22,481 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:13:22,913 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:13:22,915 - INFO - [MIDCAPNIFTY] yfinance fetched 239 rows
+2026-06-18 13:13:22,957 - INFO - [MIDCAPNIFTY] Inserted into indexes
+2026-06-18 13:13:41,485 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:13:41,906 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:13:41,910 - INFO - [FINNIFTY] yfinance fetched 239 rows
+2026-06-18 13:13:41,991 - INFO - [FINNIFTY] Inserted into indexes
+2026-06-18 13:13:44,055 - INFO - Cycle complete. README updated.
+2026-06-18 13:24:25,517 - INFO - Starting fetch cycle
+2026-06-18 13:24:26,248 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:24:26,299 - INFO - [NIFTY1!] Stored @ 2026-06-18 13:24
+2026-06-18 13:24:30,028 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:24:30,085 - INFO - [BANKNIFTY1!] Stored @ 2026-06-18 13:24
+2026-06-18 13:24:49,635 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:24:50,538 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:24:50,540 - INFO - [SENSEX1!] yfinance fetched 235 rows
+2026-06-18 13:24:50,564 - INFO - [SENSEX1!] Stored @ 2026-06-18 13:09
+2026-06-18 13:24:53,042 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:24:53,089 - INFO - [MIDCPNIFTY1!] Stored @ 2026-06-18 13:24
+2026-06-18 13:24:55,420 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:24:55,472 - INFO - [FINNIFTY1!] Stored @ 2026-06-18 13:11
+2026-06-18 13:24:58,022 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:24:58,077 - INFO - [NIFTY50] Stored @ 2026-06-18 13:24
+2026-06-18 13:25:00,455 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:25:00,510 - INFO - [BANKNIFTY] Stored @ 2026-06-18 13:24
+2026-06-18 13:25:02,961 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:25:02,990 - INFO - [SENSEX] Stored @ 2026-06-18 13:09
+2026-06-18 13:25:20,850 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:25:21,323 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:25:21,325 - INFO - [MIDCAPNIFTY] yfinance fetched 251 rows
+2026-06-18 13:25:21,348 - INFO - [MIDCAPNIFTY] Stored @ 2026-06-18 13:25
+2026-06-18 13:25:35,265 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:25:35,671 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:25:35,673 - INFO - [FINNIFTY] yfinance fetched 251 rows
+2026-06-18 13:25:35,710 - INFO - [FINNIFTY] Stored @ 2026-06-18 13:25
+2026-06-18 13:25:37,728 - INFO - Cycle complete. README updated.
+2026-06-18 13:33:13,234 - INFO - Starting fetch cycle
+2026-06-18 13:33:14,745 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:33:14,781 - INFO - [NIFTY1!] Stored @ 2026-06-18 13:33
+2026-06-18 13:33:19,750 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:33:19,795 - INFO - [BANKNIFTY1!] Stored @ 2026-06-18 13:33
+2026-06-18 13:33:40,004 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:33:40,861 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:33:40,861 - INFO - [SENSEX1!] yfinance fetched 244 rows
+2026-06-18 13:33:40,917 - INFO - [SENSEX1!] Stored @ 2026-06-18 13:18
+2026-06-18 13:33:44,320 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:33:44,384 - INFO - [MIDCPNIFTY1!] Stored @ 2026-06-18 13:33
+2026-06-18 13:33:47,804 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:33:47,828 - INFO - [FINNIFTY1!] Stored @ 2026-06-18 13:32
+2026-06-18 13:33:58,161 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:33:58,223 - INFO - [NIFTY50] Stored @ 2026-06-18 13:33
+2026-06-18 13:34:01,639 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:34:01,694 - INFO - [BANKNIFTY] Stored @ 2026-06-18 13:33
+2026-06-18 13:34:05,231 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:34:05,251 - INFO - [SENSEX] Stored @ 2026-06-18 13:19
+2026-06-18 13:34:24,908 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:34:25,176 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:34:25,176 - INFO - [MIDCAPNIFTY] yfinance fetched 260 rows
+2026-06-18 13:34:25,235 - INFO - [MIDCAPNIFTY] Stored @ 2026-06-18 13:34
+2026-06-18 13:34:43,458 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:34:43,759 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:34:43,765 - INFO - [FINNIFTY] yfinance fetched 260 rows
+2026-06-18 13:34:43,815 - INFO - [FINNIFTY] Stored @ 2026-06-18 13:34
+2026-06-18 13:34:45,828 - INFO - Cycle complete. README updated.
+2026-06-18 13:38:30,763 - INFO - Starting fetch cycle
+2026-06-18 13:38:31,039 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:38:31,071 - INFO - [NIFTY1!] Stored @ 2026-06-18 13:38
+2026-06-18 13:38:33,316 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:38:33,368 - INFO - [BANKNIFTY1!] Stored @ 2026-06-18 13:38
+2026-06-18 13:38:50,904 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:38:51,563 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:38:51,564 - INFO - [SENSEX1!] yfinance fetched 249 rows
+2026-06-18 13:38:51,616 - INFO - [SENSEX1!] Stored @ 2026-06-18 13:23
+2026-06-18 13:38:53,829 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:38:53,857 - INFO - [MIDCPNIFTY1!] Stored @ 2026-06-18 13:38
+2026-06-18 13:38:56,057 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:38:56,095 - INFO - [FINNIFTY1!] Stored @ 2026-06-18 13:35
+2026-06-18 13:38:58,320 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:38:58,372 - INFO - [NIFTY50] Stored @ 2026-06-18 13:38
+2026-06-18 13:39:00,580 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:39:00,603 - INFO - [BANKNIFTY] Stored @ 2026-06-18 13:38
+2026-06-18 13:39:02,819 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:39:02,873 - INFO - [SENSEX] Stored @ 2026-06-18 13:24
+2026-06-18 13:39:20,392 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:39:20,846 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:39:20,847 - INFO - [MIDCAPNIFTY] yfinance fetched 265 rows
+2026-06-18 13:39:29,944 - INFO - [MIDCAPNIFTY] Stored @ 2026-06-18 13:39
+2026-06-18 13:39:47,488 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:39:47,893 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:39:47,894 - INFO - [FINNIFTY] yfinance fetched 265 rows
+2026-06-18 13:39:51,320 - INFO - [FINNIFTY] Stored @ 2026-06-18 13:39
+2026-06-18 13:39:53,341 - INFO - Cycle complete. README updated.
+2026-06-18 13:40:50,611 - INFO - Starting fetch cycle
+2026-06-18 13:41:02,438 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 13:41:02,506 - INFO - [NIFTY1!] Stored @ 2026-06-18 13:40
+2026-06-18 13:41:05,197 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 13:41:05,245 - INFO - [BANKNIFTY1!] Stored @ 2026-06-18 13:40
+2026-06-18 13:41:23,647 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 13:41:24,595 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 13:41:24,595 - INFO - [SENSEX1!] yfinance fetched 252 rows
+2026-06-18 13:41:44,268 - INFO - [SENSEX1!] Stored @ 2026-06-18 13:26
+2026-06-18 13:41:52,170 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 13:42:00,457 - INFO - [MIDCPNIFTY1!] Stored @ 2026-06-18 13:41
+2026-06-18 13:42:02,698 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 13:42:02,723 - INFO - [FINNIFTY1!] Stored @ 2026-06-18 13:35
+2026-06-18 13:42:04,912 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 13:42:04,976 - INFO - [NIFTY50] Stored @ 2026-06-18 13:42
+2026-06-18 13:42:07,161 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 13:42:07,226 - INFO - [BANKNIFTY] Stored @ 2026-06-18 13:42
+2026-06-18 13:42:09,488 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 13:42:09,513 - INFO - [SENSEX] Stored @ 2026-06-18 13:27
+2026-06-18 13:42:27,041 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 13:42:27,380 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 13:42:27,380 - INFO - [MIDCAPNIFTY] yfinance fetched 268 rows
+2026-06-18 13:42:27,405 - INFO - [MIDCAPNIFTY] Stored @ 2026-06-18 13:42
+2026-06-18 13:42:44,911 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 13:42:45,333 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 13:42:45,333 - INFO - [FINNIFTY] yfinance fetched 268 rows
+2026-06-18 13:42:45,387 - INFO - [FINNIFTY] Stored @ 2026-06-18 13:42
+2026-06-18 13:42:47,403 - INFO - Cycle complete. README updated.
+2026-06-18 15:04:01,876 - INFO - Starting fetch cycle
+2026-06-18 15:04:02,222 - INFO - [NIFTY1!] TV fetched 375 rows
+2026-06-18 15:04:02,311 - INFO - [NIFTY1!] Inserted 350 candles into futures
+2026-06-18 15:04:04,535 - INFO - [BANKNIFTY1!] TV fetched 375 rows
+2026-06-18 15:04:04,563 - INFO - [BANKNIFTY1!] Inserted 350 candles into futures
+2026-06-18 15:04:22,139 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 15:04:23,278 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 15:04:23,278 - INFO - [SENSEX1!] yfinance fetched 335 rows
+2026-06-18 15:04:23,331 - INFO - [SENSEX1!] Inserted 335 candles into futures
+2026-06-18 15:04:25,579 - INFO - [MIDCPNIFTY1!] TV fetched 375 rows
+2026-06-18 15:04:25,613 - INFO - [MIDCPNIFTY1!] Inserted 215 candles into futures
+2026-06-18 15:04:27,827 - INFO - [FINNIFTY1!] TV fetched 375 rows
+2026-06-18 15:04:27,895 - INFO - [FINNIFTY1!] Inserted 52 candles into futures
+2026-06-18 15:04:30,094 - INFO - [NIFTY50] TV fetched 375 rows
+2026-06-18 15:04:30,165 - INFO - [NIFTY50] Inserted 350 candles into indexes
+2026-06-18 15:04:32,376 - INFO - [BANKNIFTY] TV fetched 375 rows
+2026-06-18 15:04:32,446 - INFO - [BANKNIFTY] Inserted 350 candles into indexes
+2026-06-18 15:04:34,641 - INFO - [SENSEX] TV fetched 375 rows
+2026-06-18 15:04:34,714 - INFO - [SENSEX] Inserted 335 candles into indexes
+2026-06-18 15:04:52,194 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 15:04:52,559 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 15:04:52,559 - INFO - [MIDCAPNIFTY] yfinance fetched 350 rows
+2026-06-18 15:04:52,600 - INFO - [MIDCAPNIFTY] Inserted 350 candles into indexes
+2026-06-18 15:05:11,058 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 15:05:11,602 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 15:05:11,604 - INFO - [FINNIFTY] yfinance fetched 351 rows
+2026-06-18 15:05:11,665 - INFO - [FINNIFTY] Inserted 351 candles into indexes
+2026-06-18 15:05:13,692 - INFO - Cycle complete. README updated.
+2026-06-18 15:06:52,144 - INFO - Starting fetch cycle
+2026-06-18 15:06:54,780 - INFO - [NIFTY1!] Falling back to yfinance
+2026-06-18 15:06:55,827 - INFO - [NIFTY1!] ETF volume merged from NIFTYBEES.NS
+2026-06-18 15:06:55,842 - INFO - [NIFTY1!] yfinance fetched 1852 rows
+2026-06-18 15:06:56,026 - INFO - [NIFTY1!] Inserted 1852 candles into futures
+2026-06-18 15:07:00,433 - INFO - [BANKNIFTY1!] Falling back to yfinance
+2026-06-18 15:07:10,488 - WARNING - [BANKNIFTY1!] No data from any source
+2026-06-18 15:07:25,611 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 15:07:31,144 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 15:07:31,146 - INFO - [SENSEX1!] yfinance fetched 1838 rows
+2026-06-18 15:07:31,248 - INFO - [SENSEX1!] Inserted 1838 candles into futures
+2026-06-18 15:07:35,259 - INFO - [MIDCPNIFTY1!] TV fetched 1875 rows
+2026-06-18 15:07:35,367 - INFO - [MIDCPNIFTY1!] Inserted 1875 candles into futures
+2026-06-18 15:07:39,544 - INFO - [FINNIFTY1!] TV fetched 1875 rows
+2026-06-18 15:07:39,680 - INFO - [FINNIFTY1!] Inserted 1875 candles into futures
+2026-06-18 15:07:43,904 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-18 15:07:44,051 - INFO - [NIFTY50] Inserted 1875 candles into indexes
+2026-06-18 15:07:48,604 - INFO - [BANKNIFTY] Falling back to yfinance
+2026-06-18 15:07:49,052 - INFO - [BANKNIFTY] ETF volume merged from BANKBEES.NS
+2026-06-18 15:07:49,054 - INFO - [BANKNIFTY] yfinance fetched 1853 rows
+2026-06-18 15:07:49,162 - INFO - [BANKNIFTY] Inserted 1853 candles into indexes
+2026-06-18 15:07:53,164 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-18 15:07:53,285 - INFO - [SENSEX] Inserted 1875 candles into indexes
+2026-06-18 15:08:13,090 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 15:08:13,439 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 15:08:13,441 - INFO - [MIDCAPNIFTY] yfinance fetched 1854 rows
+2026-06-18 15:08:13,550 - INFO - [MIDCAPNIFTY] Inserted 1854 candles into indexes
+2026-06-18 15:08:33,326 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 15:08:33,771 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 15:08:33,773 - INFO - [FINNIFTY] yfinance fetched 1854 rows
+2026-06-18 15:08:33,880 - INFO - [FINNIFTY] Inserted 1854 candles into indexes
+2026-06-18 15:08:35,902 - INFO - Cycle complete. README updated.
+2026-06-18 15:09:34,106 - INFO - Starting fetch cycle
+2026-06-18 15:09:34,676 - INFO - [NIFTY1!] TV fetched 1875 rows
+2026-06-18 15:09:34,779 - INFO - [NIFTY1!] Inserted 1875 candles into futures
+2026-06-18 15:09:37,122 - INFO - [BANKNIFTY1!] TV fetched 1875 rows
+2026-06-18 15:09:37,258 - INFO - [BANKNIFTY1!] Inserted 1875 candles into futures
+2026-06-18 15:09:54,769 - INFO - [SENSEX1!] Falling back to yfinance
+2026-06-18 15:09:55,543 - INFO - [SENSEX1!] ETF volume merged from SENSEXETF.NS
+2026-06-18 15:09:55,543 - INFO - [SENSEX1!] yfinance fetched 1840 rows
+2026-06-18 15:09:55,642 - INFO - [SENSEX1!] Inserted 1840 candles into futures
+2026-06-18 15:09:57,961 - INFO - [MIDCPNIFTY1!] TV fetched 1875 rows
+2026-06-18 15:09:58,099 - INFO - [MIDCPNIFTY1!] Inserted 1875 candles into futures
+2026-06-18 15:10:00,466 - INFO - [FINNIFTY1!] TV fetched 1875 rows
+2026-06-18 15:10:00,593 - INFO - [FINNIFTY1!] Inserted 1875 candles into futures
+2026-06-18 15:10:03,788 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-18 15:10:03,925 - INFO - [NIFTY50] Inserted 1875 candles into indexes
+2026-06-18 15:10:06,246 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-06-18 15:10:06,394 - INFO - [BANKNIFTY] Inserted 1875 candles into indexes
+2026-06-18 15:10:08,712 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-18 15:10:08,813 - INFO - [SENSEX] Inserted 1875 candles into indexes
+2026-06-18 15:10:26,307 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 15:10:26,896 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 15:10:26,896 - INFO - [MIDCAPNIFTY] yfinance fetched 1856 rows
+2026-06-18 15:10:47,684 - INFO - [MIDCAPNIFTY] Inserted 1856 candles into indexes
+2026-06-18 15:10:59,457 - WARNING - [FINNIFTY] TV attempt 1 failed
+Traceback (most recent call last):
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_socket.py", line 127, in recv
+    bytes_ = _recv()
+             ^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_socket.py", line 99, in _recv
+    return sock.recv(bufsize)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1263, in recv
+    return self.read(buflen)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1136, in read
+    return self._sslobj.read(len)
+           ^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 198, in fetch_tv
+    df = tv.get_hist(tv_symbol, exchange, interval=Interval.in_1_minute, n_bars=1875)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\tvDatafeed\main.py", line 216, in get_hist
+    self.__create_connection()
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\tvDatafeed\main.py", line 86, in __create_connection
+    self.ws = create_connection(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_core.py", line 664, in create_connection
+    websock.connect(url, **options)
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_core.py", line 268, in connect
+    self.handshake_response = handshake(self.sock, url, *addrs, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_handshake.py", line 66, in handshake
+    status, resp = _get_resp_headers(sock)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_handshake.py", line 142, in _get_resp_headers
+    status, resp_headers, status_message = read_headers(sock)
+                                           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_http.py", line 385, in read_headers
+    line = recv_line(sock)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_socket.py", line 151, in recv_line
+    c = recv(sock, 1)
+        ^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_socket.py", line 129, in recv
+    raise WebSocketTimeoutException("Connection timed out")
+websocket._exceptions.WebSocketTimeoutException: Connection timed out
+2026-06-18 15:11:09,576 - WARNING - [FINNIFTY] TV attempt 2 failed
+Traceback (most recent call last):
+  File "C:\Users\91984\Desktop\Indexes\stock-data-cornjob\main.py", line 198, in fetch_tv
+    df = tv.get_hist(tv_symbol, exchange, interval=Interval.in_1_minute, n_bars=1875)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\tvDatafeed\main.py", line 216, in get_hist
+    self.__create_connection()
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\tvDatafeed\main.py", line 86, in __create_connection
+    self.ws = create_connection(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_core.py", line 664, in create_connection
+    websock.connect(url, **options)
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_core.py", line 263, in connect
+    self.sock, addrs = connect(
+                       ^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_http.py", line 152, in connect
+    sock = _ssl_socket(sock, options.sslopt, hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_http.py", line 345, in _ssl_socket
+    sock = _wrap_sni_socket(sock, sslopt, hostname, check_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91984\AppData\Roaming\Python\Python311\site-packages\websocket\_http.py", line 315, in _wrap_sni_socket
+    return context.wrap_socket(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1075, in _create
+    self.do_handshake()
+  File "C:\Program Files\Python311\Lib\ssl.py", line 1346, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: _ssl.c:985: The handshake operation timed out
+2026-06-18 15:11:19,333 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 15:11:19,686 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 15:11:19,686 - INFO - [FINNIFTY] yfinance fetched 1857 rows
+2026-06-18 15:11:19,804 - INFO - [FINNIFTY] Inserted 1857 candles into indexes
+2026-06-18 15:11:21,857 - INFO - Cycle complete. README updated.
+2026-06-18 15:33:48,277 - INFO - Starting fetch cycle
+2026-06-18 15:33:50,374 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-18 15:33:51,364 - INFO - [NIFTY50] Inserted 1875 candles
+2026-06-18 15:33:55,219 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-06-18 15:33:56,213 - INFO - [BANKNIFTY] Inserted 1875 candles
+2026-06-18 15:34:00,097 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-18 15:34:00,971 - INFO - [SENSEX] Inserted 1875 candles
+2026-06-18 15:34:21,010 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 15:34:21,858 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 15:34:21,860 - INFO - [MIDCAPNIFTY] yfinance fetched 1875 rows
+2026-06-18 15:34:22,753 - INFO - [MIDCAPNIFTY] Inserted 1875 candles
+2026-06-18 15:34:43,062 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 15:34:43,602 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 15:34:43,611 - INFO - [FINNIFTY] yfinance fetched 1875 rows
+2026-06-18 15:34:45,794 - INFO - [FINNIFTY] Inserted 1875 candles
+2026-06-18 15:34:47,914 - INFO - Cycle complete. README updated.
+2026-06-18 15:36:39,427 - INFO - Starting fetch cycle
+2026-06-18 15:36:46,693 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-18 15:36:48,294 - INFO - [NIFTY50] Inserted 1875 candles
+2026-06-18 15:36:56,964 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-06-18 15:37:00,035 - INFO - [BANKNIFTY] Inserted 1875 candles
+2026-06-18 15:37:08,999 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-18 15:37:10,240 - INFO - [SENSEX] Inserted 1875 candles
+2026-06-18 15:37:39,331 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 15:37:40,798 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 15:37:40,802 - INFO - [MIDCAPNIFTY] yfinance fetched 1875 rows
+2026-06-18 15:37:42,410 - INFO - [MIDCAPNIFTY] Inserted 1875 candles
+2026-06-18 15:38:08,620 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 15:38:10,373 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 15:38:10,398 - INFO - [FINNIFTY] yfinance fetched 1875 rows
+2026-06-18 15:38:13,490 - INFO - [FINNIFTY] Inserted 1875 candles
+2026-06-18 15:38:15,610 - INFO - Cycle complete. README updated.
+2026-06-18 15:41:23,370 - INFO - Starting fetch cycle
+2026-06-18 15:41:24,469 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-18 15:41:26,257 - INFO - [NIFTY50] Inserted 1875 candles
+2026-06-18 15:41:29,157 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-06-18 15:41:30,619 - INFO - [BANKNIFTY] Inserted 1875 candles
+2026-06-18 15:41:33,538 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-18 15:41:35,270 - INFO - [SENSEX] Inserted 1875 candles
+2026-06-18 15:41:53,653 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 15:41:55,088 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 15:41:55,098 - INFO - [MIDCAPNIFTY] yfinance fetched 1875 rows
+2026-06-18 15:41:56,933 - INFO - [MIDCAPNIFTY] Inserted 1875 candles
+2026-06-18 15:42:15,341 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 15:42:15,755 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 15:42:15,758 - INFO - [FINNIFTY] yfinance fetched 1875 rows
+2026-06-18 15:42:17,240 - INFO - [FINNIFTY] Inserted 1875 candles
+2026-06-18 15:42:19,328 - INFO - Cycle complete. README updated.
+2026-06-18 15:48:21,843 - INFO - Market closed (Thursday 15:48 IST). Skipping.
+2026-06-18 15:48:53,119 - INFO - Market closed (Thursday 15:48 IST). Skipping.
+2026-06-18 15:49:00,588 - INFO - Market closed (Thursday 15:49 IST). Skipping.
+2026-06-18 15:49:18,335 - INFO - Market closed (Thursday 15:49 IST). Skipping.
+2026-06-18 15:50:24,619 - INFO - Market closed (Thursday 15:50 IST). Skipping.
+2026-06-18 16:24:03,350 - INFO - Market closed (Thursday 16:24 IST). Skipping.
+2026-06-18 16:27:01,884 - INFO - Market closed (Thursday 16:27 IST). Skipping.
+2026-06-18 16:27:52,456 - INFO - Starting fetch cycle
+2026-06-18 16:27:53,512 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-18 16:27:54,959 - INFO - [NIFTY50] Inserted 1875 candles
+2026-06-18 16:27:57,843 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-06-18 16:27:59,149 - INFO - [BANKNIFTY] Inserted 1875 candles
+2026-06-18 16:28:02,056 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-18 16:28:05,217 - INFO - [SENSEX] Inserted 1875 candles
+2026-06-18 16:28:23,876 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-18 16:28:25,211 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-18 16:28:25,281 - INFO - [MIDCAPNIFTY] yfinance fetched 1875 rows
+2026-06-18 16:28:27,356 - INFO - [MIDCAPNIFTY] Inserted 1875 candles
+2026-06-18 16:28:45,818 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-18 16:28:47,043 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-18 16:28:47,046 - INFO - [FINNIFTY] yfinance fetched 1875 rows
+2026-06-18 16:28:48,424 - INFO - [FINNIFTY] Inserted 1875 candles
+2026-06-18 16:28:50,548 - INFO - Cycle complete. README updated.

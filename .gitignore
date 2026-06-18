@@ -1,3 +1,7 @@
 .venv/
 __pycache__/
 .history/
+.env
+*.txt
+!requirements.txt
+*.log
