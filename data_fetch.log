@@ -21834,3 +21834,19 @@ TimeoutError: _ssl.c:985: The handshake operation timed out
 2026-06-25 05:31:41,130 - INFO - [FINNIFTY] yfinance fetched 1606 rows
 2026-06-25 05:31:41,800 - INFO - [FINNIFTY] Inserted 1606 candles
 2026-06-25 05:31:43,853 - INFO - Cycle complete. README updated.
+2026-06-25 05:45:42,153 - INFO - Starting fetch cycle
+2026-06-25 05:45:42,509 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-06-25 05:45:43,288 - INFO - [NIFTY50] Inserted 225 candles
+2026-06-25 05:45:45,635 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-06-25 05:45:46,401 - INFO - [BANKNIFTY] Inserted 225 candles
+2026-06-25 05:45:48,710 - INFO - [SENSEX] TV fetched 1875 rows
+2026-06-25 05:45:49,482 - INFO - [SENSEX] Inserted 225 candles
+2026-06-25 05:46:07,115 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-06-25 05:46:07,794 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-06-25 05:46:07,796 - INFO - [MIDCAPNIFTY] yfinance fetched 1622 rows
+2026-06-25 05:46:08,488 - INFO - [MIDCAPNIFTY] Inserted 1622 candles
+2026-06-25 05:46:26,026 - INFO - [FINNIFTY] Falling back to yfinance
+2026-06-25 05:46:26,450 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-06-25 05:46:26,452 - INFO - [FINNIFTY] yfinance fetched 1622 rows
+2026-06-25 05:46:27,137 - INFO - [FINNIFTY] Inserted 1622 candles
+2026-06-25 05:46:29,193 - INFO - Cycle complete. README updated.
