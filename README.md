@@ -1,4 +1,4 @@
-Last updated: 2026-06-26 17:16:32 IST
+Last updated: 2026-06-26 17:32:01 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -236,9 +236,9 @@ Last updated: 2026-06-26 17:16:32 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 543439.00 | CMF | -0.29 | Acc/Dist | 276035.70 |
+| OBV | 513377.00 | CMF | -0.29 | Acc/Dist | 274788.24 |
 | MFI | 40.95 | Force Idx | 2288.17 | EOM | 8065175.32 |
-| VPT | 121.98 | NVI | 1000.74 | VWAP | 17574.23 |
+| VPT | 121.64 | NVI | 1000.90 | VWAP | 17574.23 |
 | Chg % | 0.05 |  |  |  |  |
 
 
@@ -255,7 +255,7 @@ Last updated: 2026-06-26 17:16:32 IST
 | SMA 5 | 26771.29 | SMA 10 | 26771.02 | SMA 20 | 26773.90 |
 | SMA 50 | 26785.78 | SMA 100 | 26829.50 | SMA 200 | 26900.66 |
 | EMA 5 | 26772.81 | EMA 10 | 26772.82 | EMA 20 | 26775.02 |
-| EMA 50 | 26791.24 | EMA 100 | 26824.93 | EMA 200 | 26862.62 |
+| EMA 50 | 26791.24 | EMA 100 | 26824.93 | EMA 200 | 26862.61 |
 | WMA 10 | 26771.66 | WMA 20 | 26773.20 |  |  |
 
 **⚡ Momentum & Trend**
@@ -294,8 +294,8 @@ Last updated: 2026-06-26 17:16:32 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 56208.00 | CMF | -0.15 | Acc/Dist | 30280.01 |
+| OBV | 56104.00 | CMF | -0.15 | Acc/Dist | 30355.54 |
 | MFI | 31.25 | Force Idx | 372.48 | EOM | -16950484.65 |
-| VPT | -0.51 | NVI | 1005.66 | VWAP | 26773.90 |
+| VPT | -0.59 | NVI | 1005.74 | VWAP | 26773.90 |
 | Chg % | 0.01 |  |  |  |  |
 
