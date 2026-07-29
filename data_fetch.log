@@ -73885,3 +73885,19 @@ websocket._exceptions.WebSocketTimeoutException: Connection timed out
 2026-07-29 04:46:38,305 - INFO - [FINNIFTY] yfinance fetched 1558 rows
 2026-07-29 04:46:38,786 - INFO - [FINNIFTY] Inserted 1558 candles
 2026-07-29 04:46:40,820 - INFO - Cycle complete. README updated.
+2026-07-29 05:01:28,027 - INFO - Starting fetch cycle
+2026-07-29 05:01:28,692 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-07-29 05:01:29,476 - INFO - [NIFTY50] Inserted 225 candles
+2026-07-29 05:01:32,135 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-07-29 05:01:32,921 - INFO - [BANKNIFTY] Inserted 225 candles
+2026-07-29 05:01:35,550 - INFO - [SENSEX] TV fetched 1875 rows
+2026-07-29 05:01:36,331 - INFO - [SENSEX] Inserted 225 candles
+2026-07-29 05:01:54,405 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-07-29 05:01:55,023 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-07-29 05:01:55,025 - INFO - [MIDCAPNIFTY] yfinance fetched 1573 rows
+2026-07-29 05:01:55,712 - INFO - [MIDCAPNIFTY] Inserted 1573 candles
+2026-07-29 05:02:13,917 - INFO - [FINNIFTY] Falling back to yfinance
+2026-07-29 05:02:14,274 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-07-29 05:02:14,276 - INFO - [FINNIFTY] yfinance fetched 1574 rows
+2026-07-29 05:02:14,955 - INFO - [FINNIFTY] Inserted 1574 candles
+2026-07-29 05:02:16,990 - INFO - Cycle complete. README updated.
