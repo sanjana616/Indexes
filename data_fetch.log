@@ -453,3 +453,19 @@
 2026-07-30 19:46:37,880 - INFO - [FINNIFTY] yfinance fetched 1871 rows
 2026-07-30 19:46:38,462 - INFO - [FINNIFTY] Inserted 1871 candles
 2026-07-30 19:46:40,496 - INFO - Cycle complete. README updated.
+2026-07-30 20:01:21,021 - INFO - Starting fetch cycle
+2026-07-30 20:01:21,323 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-07-30 20:01:22,110 - INFO - [NIFTY50] Inserted 225 candles
+2026-07-30 20:01:24,408 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-07-30 20:01:25,165 - INFO - [BANKNIFTY] Inserted 225 candles
+2026-07-30 20:01:27,505 - INFO - [SENSEX] TV fetched 1875 rows
+2026-07-30 20:01:28,277 - INFO - [SENSEX] Inserted 225 candles
+2026-07-30 20:01:45,890 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-07-30 20:01:46,490 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-07-30 20:01:46,491 - INFO - [MIDCAPNIFTY] yfinance fetched 1871 rows
+2026-07-30 20:01:47,271 - INFO - [MIDCAPNIFTY] Inserted 1871 candles
+2026-07-30 20:02:04,823 - INFO - [FINNIFTY] Falling back to yfinance
+2026-07-30 20:02:05,215 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-07-30 20:02:05,217 - INFO - [FINNIFTY] yfinance fetched 1871 rows
+2026-07-30 20:02:06,015 - INFO - [FINNIFTY] Inserted 1871 candles
+2026-07-30 20:02:08,050 - INFO - Cycle complete. README updated.
