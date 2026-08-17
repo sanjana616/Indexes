@@ -1,4 +1,4 @@
-Last updated: 2026-08-17 16:32:02 IST
+Last updated: 2026-08-17 16:46:33 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -178,7 +178,7 @@ Last updated: 2026-08-17 16:32:02 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 2739786.00 | CMF | 0.50 | Acc/Dist | 3282156.21 |
+| OBV | 2739785.00 | CMF | 0.50 | Acc/Dist | 3282155.21 |
 | MFI | 66.02 | Force Idx | -431007.86 | EOM | 0.00 |
 | VPT | 11540.63 | NVI | 988.98 | VWAP | 77870.31 |
 | Chg % | -0.15 |  |  |  |  |
@@ -236,7 +236,7 @@ Last updated: 2026-08-17 16:32:02 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 503896.00 | CMF | 0.22 | Acc/Dist | 11612.30 |
+| OBV | 623370.00 | CMF | 0.22 | Acc/Dist | 11522.47 |
 | MFI | 0.00 | Force Idx | -2964.36 | EOM | -95195891.94 |
 | VPT | 32.38 | NVI | 991.18 | VWAP | 18312.70 |
 | Chg % | -0.19 |  |  |  |  |
