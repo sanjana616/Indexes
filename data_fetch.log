@@ -35643,3 +35643,44 @@
 2026-08-23 01:01:55,657 - INFO - [FINNIFTY] yfinance fetched 1875 rows
 2026-08-23 01:01:56,237 - INFO - [FINNIFTY] Inserted 1875 candles
 2026-08-23 01:01:58,298 - INFO - Cycle complete. README updated.
+2026-08-23 01:15:46,372 - INFO - Starting fetch cycle
+2026-08-23 01:15:47,029 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-08-23 01:15:47,799 - INFO - [NIFTY50] Inserted 190 candles
+2026-08-23 01:15:52,650 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-08-23 01:15:53,397 - INFO - [BANKNIFTY] Inserted 190 candles
+2026-08-23 01:16:11,092 - WARNING - [SENSEX] TV attempt 3 failed
+Traceback (most recent call last):
+  File "/home/runner/work/Indexes/Indexes/main.py", line 242, in fetch_tv
+    df = tv.get_hist(tv_symbol, exchange, interval=Interval.in_1_minute, n_bars=1875)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/tvDatafeed/main.py", line 216, in get_hist
+    self.__create_connection()
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/tvDatafeed/main.py", line 86, in __create_connection
+    self.ws = create_connection(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/websocket/_core.py", line 664, in create_connection
+    websock.connect(url, **options)
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/websocket/_core.py", line 263, in connect
+    self.sock, addrs = connect(
+                       ^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/websocket/_http.py", line 146, in connect
+    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/websocket/_http.py", line 223, in _open_socket
+    raise error
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/websocket/_http.py", line 210, in _open_socket
+    sock.connect(address)
+TimeoutError: timed out
+2026-08-23 01:16:14,093 - INFO - [SENSEX] Falling back to yfinance
+2026-08-23 01:16:14,737 - INFO - [SENSEX] ETF volume merged from SENSEXETF.NS
+2026-08-23 01:16:14,738 - INFO - [SENSEX] yfinance fetched 1875 rows
+2026-08-23 01:16:15,507 - INFO - [SENSEX] Inserted 1875 candles
+2026-08-23 01:16:33,512 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-08-23 01:16:33,931 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-08-23 01:16:33,932 - INFO - [MIDCAPNIFTY] yfinance fetched 1875 rows
+2026-08-23 01:16:34,706 - INFO - [MIDCAPNIFTY] Inserted 1875 candles
+2026-08-23 01:16:52,061 - INFO - [FINNIFTY] Falling back to yfinance
+2026-08-23 01:16:52,409 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-08-23 01:16:52,411 - INFO - [FINNIFTY] yfinance fetched 1875 rows
+2026-08-23 01:16:53,175 - INFO - [FINNIFTY] Inserted 1875 candles
+2026-08-23 01:16:55,229 - INFO - Cycle complete. README updated.
