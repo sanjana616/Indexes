@@ -42228,3 +42228,19 @@ TimeoutError: timed out
 2026-08-27 08:02:03,469 - INFO - [FINNIFTY] yfinance fetched 1758 rows
 2026-08-27 08:02:04,009 - INFO - [FINNIFTY] Inserted 1758 candles
 2026-08-27 08:02:06,064 - INFO - Cycle complete. README updated.
+2026-08-27 08:15:51,379 - INFO - Starting fetch cycle
+2026-08-27 08:15:51,891 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-08-27 08:15:52,453 - INFO - [NIFTY50] Inserted 159 candles
+2026-08-27 08:15:54,917 - INFO - [BANKNIFTY] TV fetched 1875 rows
+2026-08-27 08:15:55,467 - INFO - [BANKNIFTY] Inserted 158 candles
+2026-08-27 08:15:57,932 - INFO - [SENSEX] TV fetched 1875 rows
+2026-08-27 08:15:58,485 - INFO - [SENSEX] Inserted 159 candles
+2026-08-27 08:16:16,261 - INFO - [MIDCAPNIFTY] Falling back to yfinance
+2026-08-27 08:16:17,196 - INFO - [MIDCAPNIFTY] ETF volume merged from MIDSELIETF.NS
+2026-08-27 08:16:17,198 - INFO - [MIDCAPNIFTY] yfinance fetched 1772 rows
+2026-08-27 08:16:17,745 - INFO - [MIDCAPNIFTY] Inserted 1772 candles
+2026-08-27 08:16:35,513 - INFO - [FINNIFTY] Falling back to yfinance
+2026-08-27 08:16:36,148 - INFO - [FINNIFTY] ETF volume merged from NIF100BEES.NS
+2026-08-27 08:16:36,149 - INFO - [FINNIFTY] yfinance fetched 1772 rows
+2026-08-27 08:16:36,694 - INFO - [FINNIFTY] Inserted 1772 candles
+2026-08-27 08:16:38,748 - INFO - Cycle complete. README updated.
