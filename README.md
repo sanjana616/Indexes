@@ -1,4 +1,4 @@
-Last updated: 2026-08-31 17:16:37 IST
+Last updated: 2026-08-31 17:32:05 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -62,9 +62,9 @@ Last updated: 2026-08-31 17:16:37 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 24868273.00 | CMF | -0.07 | Acc/Dist | -83120087.55 |
+| OBV | 24865077.00 | CMF | -0.07 | Acc/Dist | -83123085.34 |
 | MFI | 30.72 | Force Idx | -5115074.05 | EOM | 0.00 |
-| VPT | -8965.55 | NVI | 996.45 | VWAP | 24060.06 |
+| VPT | -8966.31 | NVI | 996.45 | VWAP | 24060.06 |
 | Chg % | 0.13 |  |  |  |  |
 
 
@@ -236,9 +236,9 @@ Last updated: 2026-08-31 17:16:37 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 199544.00 | CMF | 0.04 | Acc/Dist | 125542.65 |
+| OBV | -314822.00 | CMF | 0.04 | Acc/Dist | -40402.88 |
 | MFI | 100.00 | Force Idx | 14471.28 | EOM | 3368318697.68 |
-| VPT | 9.83 | NVI | 1017.94 | VWAP | 18317.77 |
+| VPT | -62.30 | NVI | 1018.13 | VWAP | 18317.77 |
 | Chg % | 1.04 |  |  |  |  |
 
 
@@ -253,9 +253,9 @@ Last updated: 2026-08-31 17:16:37 IST
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
 | SMA 5 | 26150.29 | SMA 10 | 26132.37 | SMA 20 | 26127.38 |
-| SMA 50 | 26141.20 | SMA 100 | 26117.66 | SMA 200 | 26131.92 |
+| SMA 50 | 26141.20 | SMA 100 | 26117.63 | SMA 200 | 26131.88 |
 | EMA 5 | 26174.22 | EMA 10 | 26148.00 | EMA 20 | 26136.94 |
-| EMA 50 | 26131.98 | EMA 100 | 26128.89 | EMA 200 | 26131.68 |
+| EMA 50 | 26131.97 | EMA 100 | 26128.87 | EMA 200 | 26131.65 |
 | WMA 10 | 26147.03 | WMA 20 | 26132.48 |  |  |
 
 **⚡ Momentum & Trend**
@@ -264,11 +264,11 @@ Last updated: 2026-08-31 17:16:37 IST
 |-----------|-------|-----------|-------|-----------|-------|
 | MACD | 8.38 | MACD Signal | -3.48 | MACD Diff | 11.86 |
 | ADX | 26.25 | ADX+ | 76.54 | ADX- | 6.69 |
-| RSI 7 | 98.00 | RSI 14 | 90.62 | RSI 21 | 84.16 |
+| RSI 7 | 98.00 | RSI 14 | 90.62 | RSI 21 | 84.17 |
 | Stoch %K | 100.00 | Stoch %D | - | ROC | 0.69 |
 | Williams %R | 0.00 | CCI | 477.66 | DPO | -12.93 |
 | AO | -2.07 | KAMA | 26194.61 | PPO | 0.03 |
-| TSI | 20.87 | Ult. Osc | 94.84 |  |  |
+| TSI | 20.88 | Ult. Osc | 94.84 |  |  |
 
 **🎯 Trend Indicators**
 
@@ -294,8 +294,8 @@ Last updated: 2026-08-31 17:16:37 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 13290.00 | CMF | 0.13 | Acc/Dist | -14079.10 |
+| OBV | 65714.00 | CMF | 0.13 | Acc/Dist | -10194.74 |
 | MFI | 100.00 | Force Idx | 19934.85 | EOM | 2048026785.80 |
-| VPT | 0.45 | NVI | 1010.32 | VWAP | 26159.44 |
+| VPT | -20.96 | NVI | 1004.69 | VWAP | 26159.44 |
 | Chg % | 0.69 |  |  |  |  |
 
